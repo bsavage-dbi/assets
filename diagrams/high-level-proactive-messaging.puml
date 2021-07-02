@@ -1,0 +1,92 @@
+@startuml
+
+skinparam sequenceBoxBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam sequence {
+    ArrowColor DarkBlue
+    ActorBackgroundColor White
+    ActorBorderColor black
+    LifeLineBorderColor DarkBlue
+    LifeLineBackgroundColor #A9DCDF
+    BoxPadding 20
+    ParticipantPadding 20
+    ParticipantBorderColor Black
+    ParticipantBackgroundColor White
+}
+
+autonumber "<b>[00] "
+header created by Brian Savage 07/01/2021
+footer all rights reservrd David's Bridal Inc.
+
+title High-Level Proactive Messaging
+box "DBI" #D4E1F5
+participant "Data Services" as DBI_DATA
+participant "API Services" as DBI_API
+actor "DBI Stylist" as DBI_STY
+end box
+
+activate DBI_API
+
+DBI_DATA -> DBI_API : Send Data
+DBI_API -> LPPM : Auth Request
+DBI_API <- LPPM : Auth Response
+DBI_API -> LPPM : send message
+
+deactivate DBI_API
+
+box "Liveperson" #D4E1F5
+queue "Skill/Queue" as LPQ
+participant "Conversational Cloud" as LPCC
+
+participant "Proactive Messaging API Service" as LPPM
+end box
+
+activate LPPM
+
+LPPM -> TWAS : send text payload
+
+box "Twiliow" #D4E1F5
+participant "OPT OUT API Service" as TWAS
+end box
+
+activate TWAS
+
+TWAS -> TWAS : evalauate OPT OUT Status
+LPPM <- TWAS : Response for sent status
+
+
+actor "DBI Customer" as DBI_CUS
+TWAS -> DBI_CUS : send message to customer
+deactivate TWAS
+activate DBI_CUS
+
+deactivate LPPM
+activate LPCC
+
+LPCC <- DBI_CUS : she replies to text
+
+
+
+LPQ <- LPCC : reply is queued
+LPQ <-> DBI_CUS : skill interacts with customer
+LPQ <-> DBI_CUS : skill interacts with customer
+deactivate LPCC
+
+LPQ <-> LPQ : skill sends her to human interaction
+deactivate LPCC
+
+deactivate TWAS
+activate DBI_STY
+
+DBI_STY <- LPQ : she is queued for human touch
+
+
+deactivate LPQ
+deactivate LPQ
+
+
+DBI_STY <-> LPCC : stylist interacts with customer
+LPCC <-> DBI_CUS : interactios between stylist and customer proxied
+deactivate LPQ
+@enduml
