@@ -16,10 +16,9 @@ skinparam sequence {
 }
 
 autonumber "<b>[00] "
-header created by Brian Savage 07/01/2021
-footer all rights reservrd David's Bridal Inc.
+footer created by Brian Savage 07/06/2021 \n all rights reservrd David's Bridal Inc.
 
-title High-Level Proactive Messaging
+title Proactive Messaging Process - Detailed Diagram
 box "DBI" #D4E1F5
 participant "Data Services" as DBI_DATA
 participant "API Services" as DBI_API

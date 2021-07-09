@@ -3,6 +3,11 @@
 skinparam sequence {
     ActivityBarColor #black
 }
+
+footer created by Brian Savage 07/01/2021 \n all rights reservrd David's Bridal Inc.
+
+title Make An Appointment Text Messages
+
 start
 
 #eeeeee:Text "Hello";

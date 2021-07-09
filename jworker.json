@@ -1,0 +1,87 @@
+{
+    "campaignName": "ReadyForPickupSms-Test",
+    "skill": "storeskill_0041",
+    "templateId": "1234567890",
+    "outboundNumber": "{{LONG_NUMBER}}",
+    "consent": true,
+    "consumers": [
+        {
+            "consumerContent": {
+                "sms": "1{{BRIAN_CELL}}"
+            },
+            "variables": {
+                "1": "Text1"
+            },
+            "personalInfo": {
+                "firstname": "Brian",
+                "lastname": "Savage",
+                "age": {
+                    "age": 49,
+                    "year": 1971,
+                    "month": 12,
+                    "day": 23
+                },
+                "contacts": [
+                    {
+                        "email": "bsavage@dbi.com",
+                        "phone": "+1 610-582-0359",
+                        "address": {
+                            "country": "United States",
+                            "region": "NA"
+                        }
+                    }
+                ],
+                "gender": "MALE",
+                "language": "en-US",
+                "company": "David's Bridal Inc."
+            },
+            "customerInfo": {
+                "cstatus": "VIP",
+                "ctype": "Gold",
+                "customerId": "138766AC",
+                "balance": -200.99,
+                "currency": "EUR",
+                "socialId": "11256324780",
+                "imei": "3543546543545688",
+                "userName": "user000",
+                "companySize": 50000,
+                "companyBranch": "Philadelphia",
+                "accountName": "Bank of Silliness corp",
+                "role": "Product Manager",
+                "lastPaymentDate": {
+                    "day": 15,
+                    "month": 10,
+                    "year": 2020
+                },
+                "registrationDate": {
+                    "day": 23,
+                    "month": 5,
+                    "year": 2015
+                },
+                "loginStatus": 1
+            },
+            "purchase": {
+                "total": "11.7",
+                "serverTimeStamp": "1434394476705",
+                "originalTimeStamp": "1440413291351",
+                "cart": {
+                    "total": "17.8",
+                    "currency": "USD",
+                    "products": [
+                        {
+                            "quantity": "3",
+                            "product": {
+                                "name": "antivirus pro plan",
+                                "category": "software",
+                                "sku": "xyz001",
+                                "price": "7.8"
+                            }
+                        }
+                    ],
+                    "numItems": "13"
+                },
+                "orderId": "DRV1534XC"
+            }
+        }
+    ]
+}

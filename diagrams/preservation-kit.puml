@@ -1,0 +1,53 @@
+@startuml
+
+skinparam sequenceBoxBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam sequence {
+    ArrowColor DarkBlue
+    ActorBackgroundColor White
+    ActorBorderColor black
+    LifeLineBorderColor DarkBlue
+    LifeLineBackgroundColor #A9DCDF
+    BoxPadding 20
+    ParticipantPadding 20
+    ParticipantBorderColor Black
+    ParticipantBackgroundColor White
+}
+
+footer all rights reservrd David's Bridal Inc.
+title Preservation Kit
+
+|Customer|
+start
+#D4E1F5:Customer Purchase Kit from Store/Online;
+#D4E1F5:Prepare the Dress / Fill in the Kit form with
+additional service details / payment info;
+#D4E1F5:1. Visit DBI Online Store
+2. Navigates to "Print Shipping Label for Preservation Kit";
+#D4E1F5:Fill in Ship From Address and Click Submit;
+
+|Digital Commerce|
+#D4E1F5:Invoke UPS Shipping API with Ship From. 
+Ship To address will be pre-configured 
+based on country/account ;
+
+
+|UPS|
+#D4E1F5:Shipping Label Generated;
+
+|Digital Commerce|
+#D4E1F5:Store Shipping Label Info;
+
+|Customer|
+#D4E1F5:Display Shipping Label;
+#D4E1F5:Print Label / pack and send to UPS;
+
+|UPS|
+#D4E1F5:UPS Pickup Package;
+
+|Kit Supplier|
+#D4E1F5:Supplier Receives Package;
+
+stop
+@enduml
