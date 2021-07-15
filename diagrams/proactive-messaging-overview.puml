@@ -18,7 +18,7 @@ skinparam sequence {
 autonumber "<b>[00] "
 footer created by Brian Savage 07/03/2021 \n all rights reservrd David's Bridal Inc.
 
-title Proactive Messaging Process - Overview Diagram
+title Proactive Messaging Process | Overview Diagram
 
 box "DBI" #D4E1F5
 participant "Data Services" as DBI_DATA

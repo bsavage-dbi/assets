@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "f8ea60dd-9226-4259-b27d-173b97db4ba1",
+		"name": "_Reporting Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "proactive authorization",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.environment.set('access_token', jsonData.access_token);",
+							"pm.environment.set('token_type', jsonData.token_type);",
+							"// console.log(\"Completed Auth: \"+pm.environment.get('access_token'));"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{PROACTIVE-LOGIN-URL}}/{{ACCOUNT_NUMBER}}/app/token?v={{v}}&grant_type={{grant_type}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{PROACTIVE-LOGIN-URL}}"
+					],
+					"path": [
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"token"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "{{v}}"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Camp",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://va.cx-reporting.liveperson.net/api/account/{{ACCOUNT_NUMBER}}/app/prmsg/analytics?attemptedStartTime=1625097600000&attemptedEndTime=1625183999000",
+					"protocol": "https",
+					"host": [
+						"va",
+						"cx-reporting",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"api",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"prmsg",
+						"analytics"
+					],
+					"query": [
+						{
+							"key": "attemptedStartTime",
+							"value": "1625097600000"
+						},
+						{
+							"key": "attemptedEndTime",
+							"value": "1625183999000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Transactions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"",
+							"for(item in jsonData.transactions){",
+							"    console.log(item);",
+							"}",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://va.cx-reporting.liveperson.net/api/account/{{ACCOUNT_NUMBER}}/app/prmsg/transactions/?attemptedStartTime=1625081907000&attemptedEndTime=1625168307000",
+					"protocol": "https",
+					"host": [
+						"va",
+						"cx-reporting",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"api",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"prmsg",
+						"transactions",
+						""
+					],
+					"query": [
+						{
+							"key": "attemptedStartTime",
+							"value": "1625081907000"
+						},
+						{
+							"key": "attemptedEndTime",
+							"value": "1625168307000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Transactions Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://va.cx-reporting.liveperson.net/api/account/{{ACCOUNT_NUMBER}}/app/prmsg/transactions/?attemptedStartTime=1625081907000&attemptedEndTime=1625168307000",
+					"protocol": "https",
+					"host": [
+						"va",
+						"cx-reporting",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"api",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"prmsg",
+						"transactions",
+						""
+					],
+					"query": [
+						{
+							"key": "attemptedStartTime",
+							"value": "1625081907000"
+						},
+						{
+							"key": "attemptedEndTime",
+							"value": "1625168307000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Specific Camp",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://va.cx-reporting.liveperson.net/api/account/{{ACCOUNT_NUMBER}}/app/prmsg/campaigns/2DqVNpjFV",
+					"protocol": "https",
+					"host": [
+						"va",
+						"cx-reporting",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"api",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"prmsg",
+						"campaigns",
+						"2DqVNpjFV"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

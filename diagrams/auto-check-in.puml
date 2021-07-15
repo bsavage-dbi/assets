@@ -1,0 +1,26 @@
+@startuml
+
+title Auto Checkin Appointment Text Messages
+partition "Day Before Appointment" {
+    #e1ebfc:Appointment Confirmation Sent to Her;
+
+
+    if (She Replies) then (yes)
+        :Answers any questions and advises the customer
+        to text HERE when they arrive at the store for
+        their appointment;
+
+    else (no)
+        :she is placed in a skill queue;
+    endif
+    :Pends the conversation in LivePerson overnight;
+}
+partition "Day of Appointment" {
+:Texts HERE when she arrives in store in the same text thread;
+:Checks in the appointment in myAppointments;
+:Texts the customer back advising she is checked in for her appointment;
+:Asks customer to wait in a specific section of the store for her stylist;
+}
+stop
+
+@enduml

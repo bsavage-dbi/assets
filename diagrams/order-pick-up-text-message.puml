@@ -43,7 +43,7 @@ note over DBI_STY, LPCC #EEE
 <b>Payload Sent to Proactive Messaging
 - Message Content
 - Order ID
-- Customer ID
+- Customer Information Object (customer id)
 - Store ID
 end note
 LPPM -> TWAS : send message for OPT OUT Check
@@ -53,6 +53,12 @@ activate LPCC
 
 LPCC <- DBI_CUS : she replies to text
 LPCC <-> DBI_CUS : skill interacts with her
+note over LPCC,DBI_CUS #EEE
+<b>Attributes Sent to Proactive Messaging Leveraged for Conversation between Bot & Customer
+This interaction should begin with knowing who the customer is and have no need to request 
+information to identify them. When they choose to, or are sent to, a conversation with a 
+stylist the system will know which store skill to queue them in.
+end note
 DBI_STY <- LPCC : skill to stylist
 deactivate LPCC
 

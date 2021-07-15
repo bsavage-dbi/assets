@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "7d46f872-866b-41c5-bcd8-b207f715d669",
+		"name": "Test Order Pick Up Message Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authenticat to Proactive Messaging",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.environment.set('access_token', jsonData.access_token);",
+							"pm.environment.set('token_type', jsonData.token_type);",
+							"",
+							"tests[\"Access Token was returned\"] = jsonData.access_token;",
+							"console.log(jsonData.access_token);",
+							"tests[\"Token Type was returned\"] = jsonData.token_type;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{PROACTIVE-LOGIN-URL}}/{{ACCOUNT_NUMBER}}/app/token?v={{v}}&grant_type={{grant_type}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{PROACTIVE-LOGIN-URL}}"
+					],
+					"path": [
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"token"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "{{v}}"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "001 - Order Pick Up FIRST Message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"",
+							"pm.globals.set('CURRENT_CAMPAIGN', jsonData.proactiveCampaignId);",
+							"",
+							"tests[\"proactiveCampaignId was returned\"] = jsonData.proactiveCampaignId;",
+							"tests[\"phoneNumber Type was returned\"] = jsonData.acceptedConsumers.phoneNumber;",
+							"",
+							"/*",
+							"{",
+							"    \"proactiveCampaignId\": \"TL1h0nYNc\",",
+							"    \"leCampaignId\": \"1845026930\",",
+							"    \"leEngagementId\": \"3413515130\",",
+							"    \"requestTraceId\": \"9d70fa06-4ab9-4091-b80e-f2b071878d83\",",
+							"    \"failedConsumers\": [],",
+							"    \"acceptedConsumers\": [",
+							"        {",
+							"            \"id\": \"f79e67b0-82da-7341-057e-94637f05c4e3\",",
+							"            \"phoneNumber\": \"+16102139724\",",
+							"            \"consumerContent\": {",
+							"                \"sms\": \"16102139724\"",
+							"            }",
+							"        }",
+							"    ]",
+							"}",
+							"*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campaignName\": \"ReadyForPickupSms-Test\",\n    \"skill\": \"Store Questions\",\n    \"templateId\": \"H633606602464149\",\n    \"outboundNumber\": \"{{outboundNumber}}\",\n    \"consent\": true,\n    \"consumers\": [\n        {\n            \"consumerContent\": {\n                \"sms\": \"1{{BRIAN_CELL}}\",\n                \"wa\": \"{{BRIAN_CELL}}\"\n            },\n            \"variables\": {\n                \"1\": \"Test1\",\n                \"2\": \"Test2\",\n                \"3\": \"Test3\"\n            },\n            \"personalInfo\": {\n                \"firstname\": \"Brian\",\n                \"lastname\": \"Savage\",\n                \"age\": {\n                    \"age\": 49,\n                    \"year\": 1971,\n                    \"month\": 12,\n                    \"day\": 23\n                },\n                \"contacts\": [\n                    {\n                        \"email\": \"bsavage@dbi.com\",\n                        \"phone\": \"+1 610-582-0359\",\n                        \"address\": {\n                            \"country\": \"United States\",\n                            \"region\": \"NA\"\n                        }\n                    }\n                ],\n                \"gender\": \"MALE\",\n                \"language\": \"en-US\",\n                \"company\": \"David's Bridal Inc.\"\n            },\n            \"customerInfo\": {\n                \"cstatus\": \"VIP\",\n                \"ctype\": \"Gold\",\n                \"customerId\": \"138766AC\",\n                \"balance\": -200.99,\n                \"currency\": \"EUR\",\n                \"socialId\": \"11256324780\",\n                \"imei\": \"3543546543545688\",\n                \"userName\": \"user000\",\n                \"companySize\": 50000,\n                \"companyBranch\": \"Philadelphia\",\n                \"accountName\": \"Bank of Silliness corp\",\n                \"role\": \"Product Manager\",\n                \"lastPaymentDate\": {\n                    \"day\": 15,\n                    \"month\": 10,\n                    \"year\": 2020\n                },\n                \"registrationDate\": {\n                    \"day\": 23,\n                    \"month\": 5,\n                    \"year\": 2015\n                },\n                \"loginStatus\": 1\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "002 - Order Pick Up SECOND Message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"",
+							"pm.globals.set('CURRENT_CAMPAIGN', jsonData.proactiveCampaignId);",
+							"",
+							"tests[\"proactiveCampaignId was returned\"] = jsonData.proactiveCampaignId;",
+							"tests[\"phoneNumber Type was returned\"] = jsonData.acceptedConsumers.phoneNumber;",
+							"",
+							"/*",
+							"{",
+							"    \"proactiveCampaignId\": \"TL1h0nYNc\",",
+							"    \"leCampaignId\": \"1845026930\",",
+							"    \"leEngagementId\": \"3413515130\",",
+							"    \"requestTraceId\": \"9d70fa06-4ab9-4091-b80e-f2b071878d83\",",
+							"    \"failedConsumers\": [],",
+							"    \"acceptedConsumers\": [",
+							"        {",
+							"            \"id\": \"f79e67b0-82da-7341-057e-94637f05c4e3\",",
+							"            \"phoneNumber\": \"+16102139724\",",
+							"            \"consumerContent\": {",
+							"                \"sms\": \"16102139724\"",
+							"            }",
+							"        }",
+							"    ]",
+							"}",
+							"*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campaignName\": \"Order Pick Up Test Campaign\",\n    \"skill\": \"Store Questions\",\n    \"consent\": true,\n    \"templateId\": \"1234567890\",\n    \"outboundNumber\": \"{{outboundNumber}}\",\n    \"consumers\": [\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"{{BRIAN_CELL}}\",\n            \"variables\": {\n                \"1\": \"Hello, beautiful!\\r\\n\\r\\nJust a reminder that your David’s Bridal order for F15612 REGENCY 8 is here! Please pick it up within 7 days at the store where you made your purchase.\\r\\nNo appointment needed.\\r\\nQuestions? Text HELLO.\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "003 - Order Pick Up THIRD Message",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"",
+							"pm.globals.set('CURRENT_CAMPAIGN', jsonData.proactiveCampaignId);",
+							"",
+							"tests[\"proactiveCampaignId was returned\"] = jsonData.proactiveCampaignId;",
+							"tests[\"phoneNumber Type was returned\"] = jsonData.acceptedConsumers.phoneNumber;",
+							"",
+							"/*",
+							"{",
+							"    \"proactiveCampaignId\": \"TL1h0nYNc\",",
+							"    \"leCampaignId\": \"1845026930\",",
+							"    \"leEngagementId\": \"3413515130\",",
+							"    \"requestTraceId\": \"9d70fa06-4ab9-4091-b80e-f2b071878d83\",",
+							"    \"failedConsumers\": [],",
+							"    \"acceptedConsumers\": [",
+							"        {",
+							"            \"id\": \"f79e67b0-82da-7341-057e-94637f05c4e3\",",
+							"            \"phoneNumber\": \"+16102139724\",",
+							"            \"consumerContent\": {",
+							"                \"sms\": \"16102139724\"",
+							"            }",
+							"        }",
+							"    ]",
+							"}",
+							"*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campaignName\": \"Order Pick Up Test Campaign\",\n    \"skill\": \"Store Questions\",\n    \"consent\": true,\n    \"templateId\": \"1234567890\",\n    \"outboundNumber\": \"{{outboundNumber}}\",\n    \"consumers\": [\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"{{BRIAN_CELL}}\",\n            \"variables\": {\n                \"1\": \"Hello, beautiful!\\r\\n\\r\\nJust a reminder that your David’s Bridal order for F15612 REGENCY 8 is here! Please pick it up at the store where you made your purchase.\\r\\nNo appointment needed.\\r\\nOr contact the store for shipping options.\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Campaign",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"tests[\"campaignStatus was returned\"] = jsonData.campaignStatus;",
+							"",
+							"",
+							"console.log(\"errorMessage: \" + jsonData[\"conversations\"][0][\"id\"]); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign/{{CURRENT_CAMPAIGN}}/conversations/",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign",
+						"{{CURRENT_CAMPAIGN}}",
+						"conversations",
+						""
+					]
+				},
+				"description": "Third TEXT MESSAGE should be sent 14 days after initial text reminder\n\nSame rule around if multiple items are ready for pickup applies here\n\nProposed text verbiage: “Hello, beautiful! Just a final reminder that your David’s Bridal order for <style number> has arrived and is ready for pick up. Please pick it up at the store where it was ordered or contact the store to arrange shipping. "
+			},
+			"response": []
+		},
+		{
+			"name": "Check Campaign Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"tests[\"campaignStatus was returned\"] = jsonData.campaignStatus;",
+							"",
+							"",
+							"console.log(\"errorMessage: \" + jsonData[\"conversations\"][0][\"id\"]); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign/{{CURRENT_CAMPAIGN}}/conversations/",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign",
+						"{{CURRENT_CAMPAIGN}}",
+						"conversations",
+						""
+					]
+				},
+				"description": "Third TEXT MESSAGE should be sent 14 days after initial text reminder\n\nSame rule around if multiple items are ready for pickup applies here\n\nProposed text verbiage: “Hello, beautiful! Just a final reminder that your David’s Bridal order for <style number> has arrived and is ready for pick up. Please pick it up at the store where it was ordered or contact the store to arrange shipping. "
+			},
+			"response": []
+		},
+		{
+			"name": "Check Campaign Static ID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"tests[\"campaignStatus was returned\"] = jsonData.campaignStatus;",
+							"",
+							"",
+							"console.log(\"errorMessage: \" + jsonData[\"conversations\"][0][\"id\"]); ",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign/EBqexTP1dd/conversations/",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign",
+						"EBqexTP1dd",
+						"conversations",
+						""
+					]
+				},
+				"description": "Third TEXT MESSAGE should be sent 14 days after initial text reminder\n\nSame rule around if multiple items are ready for pickup applies here\n\nProposed text verbiage: “Hello, beautiful! Just a final reminder that your David’s Bridal order for <style number> has arrived and is ready for pick up. Please pick it up at the store where it was ordered or contact the store to arrange shipping. "
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

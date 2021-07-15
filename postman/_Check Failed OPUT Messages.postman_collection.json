@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "ca77f1c8-660b-4dc6-9c93-6ffe1a8b5d2b",
+		"name": "_Check Failed OPUT Messages",
+		"description": "This collection shows how you can loop over the same request while changing the parameters using the Collection Runner and the `postman.setNextRequest()` function.\n\nTo try it out, open the collection, then click on \"Run\" to open the collection runner. Select the query you want to run and run it!\n \nThis is an answer to the two following questions on the Postman Community Forum:\n- https://community.postman.com/t/running-a-request-multiple-times-with-different-data-sets/1064\n- https://community.postman.com/t/how-to-loop-through-array-and-use-its-values-in-a-request/6771",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Loop Query Parameter",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let usernames = pm.collectionVariables.get(\"usernames\");\r",
+							"\r",
+							"if(!usernames || usernames.length == 0) {\r",
+							"    usernames = [\"AsdBsd\", \"asd123\", 123456, \"123asd\", \"asdfghjklzxcvbnmqwertyuio\"];\r",
+							"}\r",
+							"\r",
+							"let currentUsername = usernames.shift();\r",
+							"console.log(currentUsername)\r",
+							"pm.collectionVariables.set(\"username\", currentUsername);\r",
+							"pm.collectionVariables.set(\"usernames\", usernames);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const usernames = pm.collectionVariables.get(\"usernames\");\r",
+							"\r",
+							"if (usernames && usernames.length > 0){\r",
+							"    postman.setNextRequest(\"Loop Query Parameter\");\r",
+							"} else {\r",
+							"    postman.setNextRequest(null);\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://postman-echo.com/get?username={{username}}",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "{{username}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Loop Post Parameter",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"let usernames = pm.collectionVariables.get(\"usernames\");\r",
+							"\r",
+							"if(!usernames || usernames.length == 0) {\r",
+							"    usernames = [\"AsdBsd\", \"asd123\", 123456, \"123asd\", \"asdfghjklzxcvbnmqwertyuio\"];\r",
+							"}\r",
+							"\r",
+							"let currentUsername = usernames.shift();\r",
+							"pm.collectionVariables.set(\"username\", currentUsername);\r",
+							"pm.collectionVariables.set(\"usernames\", usernames);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const usernames = pm.collectionVariables.get(\"usernames\");\r",
+							"\r",
+							"if (usernames && usernames.length > 0){\r",
+							"    postman.setNextRequest(\"Loop Post Parameter\");\r",
+							"} else {\r",
+							"    postman.setNextRequest(null);\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"{{username}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://postman-echo.com/post",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "username",
+			"value": ""
+		},
+		{
+			"key": "usernames",
+			"value": ""
+		}
+	]
+}

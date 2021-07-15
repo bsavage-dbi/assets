@@ -1,8 +1,8 @@
 {
     "campaignName": "ReadyForPickupSms-Test",
-    "skill": "storeskill_0041",
-    "templateId": "1234567890",
-    "outboundNumber": "{{LONG_NUMBER}}",
+    "skill": "Store Questions",
+    "templateId": "H633606602464149",
+    "outboundNumber": "{{outboundNumber}}",
     "consent": true,
     "consumers": [
         {
@@ -10,7 +10,7 @@
                 "sms": "1{{BRIAN_CELL}}"
             },
             "variables": {
-                "1": "Text1"
+                "1": "This is a test of the order pick up message - including customer information."
             },
             "personalInfo": {
                 "firstname": "Brian",
@@ -59,28 +59,6 @@
                     "year": 2015
                 },
                 "loginStatus": 1
-            },
-            "purchase": {
-                "total": "11.7",
-                "serverTimeStamp": "1434394476705",
-                "originalTimeStamp": "1440413291351",
-                "cart": {
-                    "total": "17.8",
-                    "currency": "USD",
-                    "products": [
-                        {
-                            "quantity": "3",
-                            "product": {
-                                "name": "antivirus pro plan",
-                                "category": "software",
-                                "sku": "xyz001",
-                                "price": "7.8"
-                            }
-                        }
-                    ],
-                    "numItems": "13"
-                },
-                "orderId": "DRV1534XC"
             }
         }
     ]

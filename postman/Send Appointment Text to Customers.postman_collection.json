@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "5c005f33-6cd9-475f-97ed-c7fd21bb7193",
+		"name": "Send Appointment Text to Customers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "001_APP_TEXT-PRD-TXT Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campaignName\": \"Welcome Desk POC 037 Campaign to Customers\",\n    \"skill\": \"Welcome Desk Test\",\n    \"consent\": true,\n    \"templateId\": \"1234567890\",\n    \"outboundNumber\": \"{{outboundNumber}}\",\n    \"consumers\": [\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"610-568-2531\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 12pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        },\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"267-424-5567\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 12pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        },\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"484-637-3352\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 12pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        },\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"832-630-5300\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 12pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        },\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"908-763-6376\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 12pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        },\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"484-387-2545\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nHello Beautiful! We are thrilled about your upcoming appointment on Saturday, June 19 at 1:30pm in Allentown. Please text us back with “CONFIRM” so we can support your upcoming visit with us here.\\n\\nIf you have any questions, please reply with “QUESTION” and we’d be happy to assist. One more thing… Be sure to check out our latest safety guidelines here before your arrival: https://bit.ly/DBISafety\\n\\nWe can’t wait to see you!\"\n            }\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://proactive-messaging.z1.fs.liveperson.com/api/v2/account/40690141/campaign",
+					"protocol": "https",
+					"host": [
+						"proactive-messaging",
+						"z1",
+						"fs",
+						"liveperson",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"40690141",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "001_APP_TEXT-PRD-TXT Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"campaignName\": \"Welcome Desk POC 037 Campaign to Customers\",\n    \"skill\": \"Welcome Desk Test\",\n    \"consent\": true,\n    \"templateId\": \"1234567890\",\n    \"outboundNumber\": \"{{outboundNumber}}\",\n    \"consumers\": [\n        {\n            \"consumerCountryCode\": \"1\",\n            \"consumerPhoneNumber\": \"610-568-2531\",\n            \"variables\": {\n                \"1\": \"David's Bridal: \\n\\nOne more thing! When you arrive at the store for your bridal appointment tomorrow, please text HERE in this text thread so we can check you in. You will not need to stop at the Welcome Desk. See you then!\"\n            }\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://proactive-messaging.z1.fs.liveperson.com/api/v2/account/40690141/campaign",
+					"protocol": "https",
+					"host": [
+						"proactive-messaging",
+						"z1",
+						"fs",
+						"liveperson",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"40690141",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Campaign Copy 2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"tests[\"campaignStatus was returned\"] = jsonData.campaignStatus;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{access_token}}"
+					},
+					{
+						"key": "",
+						"value": "Test Proactive Campaign",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROACTIVE-URL}}/api/v2/account/{{ACCOUNT_NUMBER}}/campaign/XsbG6Xso5/conversations/",
+					"host": [
+						"{{PROACTIVE-URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"account",
+						"{{ACCOUNT_NUMBER}}",
+						"campaign",
+						"XsbG6Xso5",
+						"conversations",
+						""
+					]
+				},
+				"description": "Third TEXT MESSAGE should be sent 14 days after initial text reminder\n\nSame rule around if multiple items are ready for pickup applies here\n\nProposed text verbiage: “Hello, beautiful! Just a final reminder that your David’s Bridal order for <style number> has arrived and is ready for pick up. Please pick it up at the store where it was ordered or contact the store to arrange shipping. "
+			},
+			"response": []
+		},
+		{
+			"name": "login Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();",
+							"pm.environment.set('access_token', jsonData.access_token);",
+							"pm.environment.set('token_type', jsonData.token_type);",
+							"",
+							"tests[\"Access Token was returned\"] = jsonData.access_token;",
+							"console.log(jsonData.access_token);",
+							"tests[\"Token Type was returned\"] = jsonData.token_type;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{PROACTIVE-LOGIN-URL}}/{{ACCOUNT_NUMBER}}/app/token?v={{v}}&grant_type={{grant_type}}&client_id={{client_id}}&client_secret={{client_secret}}",
+					"host": [
+						"{{PROACTIVE-LOGIN-URL}}"
+					],
+					"path": [
+						"{{ACCOUNT_NUMBER}}",
+						"app",
+						"token"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "{{v}}"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}"
+						},
+						{
+							"key": "client_id",
+							"value": "{{client_id}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Campaign Copy 3",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "{{access_token}}"
+					},
+					{
+						"key": "token_type",
+						"value": "{{token_type}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://va.cx-reporting.liveperson.net//api/account/40690141/app/prmsg/campaigns/",
+					"protocol": "https",
+					"host": [
+						"va",
+						"cx-reporting",
+						"liveperson",
+						"net"
+					],
+					"path": [
+						"",
+						"api",
+						"account",
+						"40690141",
+						"app",
+						"prmsg",
+						"campaigns",
+						""
+					]
+				},
+				"description": "Third TEXT MESSAGE should be sent 14 days after initial text reminder\n\nSame rule around if multiple items are ready for pickup applies here\n\nProposed text verbiage: “Hello, beautiful! Just a final reminder that your David’s Bridal order for <style number> has arrived and is ready for pick up. Please pick it up at the store where it was ordered or contact the store to arrange shipping. "
+			},
+			"response": []
+		}
+	]
+}
