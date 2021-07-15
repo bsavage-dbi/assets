@@ -1,0 +1,8 @@
+USE CASES:
+
+T	Summary
+Users account is completed and they are in a logged in state.
+User enters in the code into the verification form page
+To ensure users phone number is their own + valid phone, we send a verification code via Twilio
+User enters in sign up data, including phone number
+User wants to sign up for Diamond Loyalty by David’s Bridal
