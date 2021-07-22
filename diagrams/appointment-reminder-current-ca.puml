@@ -1,0 +1,59 @@
+@startuml
+
+skinparam sequenceBoxBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam sequence {
+    ArrowColor DarkBlue
+    ActorBackgroundColor White
+    ActorBorderColor black
+    LifeLineBorderColor DarkBlue
+    LifeLineBackgroundColor #A9DCDF
+    BoxPadding 20
+    ParticipantPadding 20
+    ParticipantBorderColor Black
+    ParticipantBackgroundColor White
+}
+
+autonumber "<b>[00] "
+footer created by Brian Savage 06/10/2021 \n all rights reservrd David's Bridal Inc.
+
+title Appointment Reminder Text Message | Canada | Version 1.0
+
+box "DBI" #D4E1F5
+participant "Data Services" as DBI_DATA
+participant "API Services" as DBI_API
+actor "DBI Stylist" as DBI_STY
+end box
+
+box "Liveperson" #D4E1F5
+participant "Conversational Cloud" as LPCC
+participant "Proactive Messaging API Service" as LPPM
+end box
+
+box "Twiliow" #D4E1F5
+participant "OPT OUT API Service" as TWAS
+end box
+
+actor "DBI Customer" as DBI_CUS
+
+DBI_DATA -> DBI_API : Send Data
+DBI_API -> LPPM : send message
+note over DBI_STY, LPCC #EEE
+<b>Payload Sent to Proactive Messaging
+- "variables": {"1": "MESSAGE CONTENT"}
+- "skill": "Greeter Bot/Skill",
+- "out bound number": current DBI US Short Code,
+end note
+LPPM -> TWAS : send message for OPT OUT Check
+TWAS -> DBI_CUS : send message to customer
+
+activate LPCC
+
+LPCC <- DBI_CUS : she replies to text
+LPCC <-> DBI_CUS : skill interacts with her
+DBI_STY <- LPCC : skill to stylist
+deactivate LPCC
+
+DBI_STY <-> LPCC : stylist to customer
+@enduml
