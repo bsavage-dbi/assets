@@ -1,0 +1,142 @@
+issue in linkedIssues({{issue.key}}) ORDER BY issuetype ASC
+
+
+h2. {{issue.customfield_11680}}
+
+h3. Use Case Name:
+{{issue.customfield_11493}}
+
+h3. Overview:
+{{issue.customfield_11578}}
+
+h3. Actors:
+{{issue.customfield_11673}}
+
+h3. In Scope :
+{{issue.customfield_11673}}
+
+h3. Out of Scope:
+{{issue.customfield_11673}}
+
+h3. Triggers:
+{{issue.customfield_11675}}
+
+h3. Preconditions:
+{{issue.customfield_11494}}
+
+\\
+h3. Postconditions:
+{{issue.customfield_11676}}
+
+\\
+h3. Normal Flow:
+{{issue.customfield_11679}}
+
+\\
+h3. Alternate Flows:
+{{issue.customfield_11678}}
+
+h3. Assumptions
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Assumption [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Business Requirements
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Business Requirement [DBICB]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Technical Requirements
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Technical Requirement [DBICB]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Constraints
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Constraint [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Technical Constraints
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Technical Constraint [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Text Messages ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Text Message [DBICB]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. ChatBots ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "LP ChatBot [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Skills ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "LP Skill [DBICB]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. Keywords ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "Keyword [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. DBI Systems ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "DBI System [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+h3. External Systems ^Relative to Use Case^
+{{#if(not(lookupIssues.isEmpty))}}
+     {{#lookupIssues}}
+               {{#if(equals(issuetype.name, "External System [DBICBP]"))}}
+                    * {{summary}} ^{{key}}^
+               {{/}}
+     {{/}}
+{{/}}
+
+
+
+
+
+

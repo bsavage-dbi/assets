@@ -1,0 +1,54 @@
+h2. {{issue.summary}}
+_{{issue.description}}_
+{{#if(not(lookupIssues.isEmpty))}}
+     h3. This Initiative is focused on the following:
+     {{#lookupIssues}}
+          * {{summary}} ^{{key}}^
+          ** {{issueType.description}}
+     {{/}}
+{{/}}
+
+{{#if(not(issue.issuelinks.isEmpty))}}
+h2. Project Resources:
+    * h3. DBI Systems
+    {{#issue.issuelinks}}
+          {{#if(equals(issue.issueType.name,"DBI System [DBICBP]"))}}
+              **  {{issue.summary}} ^{{issue.key}}^
+          {{/}}
+    {{/}}
+    * h3. External Systems
+    {{#issue.issuelinks}}
+          {{#if(equals(issue.issueType.name,"External System [DBICBP]"))}}
+              **  {{issue.summary}} ^{{issue.key}}^
+          {{/}}
+     {{/}}
+{{/}}
+
+
+
+h2. {{issue.summary}}
+_{{issue.description}}_
+{{#if(not(lookupIssues.isEmpty))}}
+     h3. This Initiative is focused on the following:
+     {{#lookupIssues}}
+          * {{summary}} ^{{key}}^
+          ** {{issueType.description}}
+     {{/}}
+{{/}}
+
+
+{{#if(not(issue.issuelinks.isEmpty))}}
+h2. Project Resources:
+    * h3. DBI Systems
+    {{#issue.issuelinks}}
+          {{#if(equals(issue.issueType.name,"DBI System [DBICBP]"))}}
+              **  {{issue.summary}} ^{{issue.key}}^
+          {{/}}
+    {{/}}
+    * h3. External Systems
+    {{#issue.issuelinks}}
+          {{#if(equals(issue.issueType.name,"External System [DBICBP]"))}}
+              **  {{issue.summary}} ^{{issue.key}}^
+          {{/}}
+     {{/}}
+{{/}}

@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "ca6d1524-2d9b-4943-a481-304d30499333",
+		"name": "Confluence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic Confluance Call",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/2912354843",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"2912354843"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Attachment From Confluence (video)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/1098055714/child/attachment",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"1098055714",
+						"child",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Aycronyms From Confluence",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/1098055714/child/attachment",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"1098055714",
+						"child",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Confluence",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/search?cql=(parent=1119649990)&type=page&start=0&limit=10&expand=children.page&body.storage",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"search"
+					],
+					"query": [
+						{
+							"key": "cql",
+							"value": "(parent=1119649990)"
+						},
+						{
+							"key": "type",
+							"value": "page"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "expand",
+							"value": "children.page"
+						},
+						{
+							"key": "body.storage",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Aycronyms From Confluence Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/1098055714/child/attachment",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"1098055714",
+						"child",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Con Space",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/850428217",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"850428217"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Con Space Content",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/850428217",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"850428217"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Con Space Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/wiki/rest/api/content/850428217",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"wiki",
+						"rest",
+						"api",
+						"content",
+						"850428217"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

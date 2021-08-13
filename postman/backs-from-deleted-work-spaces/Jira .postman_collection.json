@@ -1,0 +1,1913 @@
+{
+	"info": {
+		"_postman_id": "97baa8c2-e242-4968-8891-09eed5be5679",
+		"name": "Jira ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic Jira Call",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"latest",
+						"board",
+						"241"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Basic Jira Call Copy 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/api/3/search?jql=\"Epic Link\"=TH-164&startAt=0&maxResults=100",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"api",
+						"3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "jql",
+							"value": "\"Epic Link\"=TH-164"
+						},
+						{
+							"key": "startAt",
+							"value": "0"
+						},
+						{
+							"key": "maxResults",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Basic Jira Call Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"latest",
+						"board",
+						"241"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Basic Jira Call Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"latest",
+						"board",
+						"241"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "TH Board",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"latest",
+						"board",
+						"241"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All TH Sprints",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241/sprint",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"latest",
+						"board",
+						"241",
+						"sprint"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get A TH Sprint",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/sprint/578",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"sprint",
+						"578"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Issues For A Sprint",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/board/241/sprint/578/issue",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"board",
+						"241",
+						"sprint",
+						"578",
+						"issue"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Issues For A Sprint Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/board/241/sprint/578/issue",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"board",
+						"241",
+						"sprint",
+						"578",
+						"issue"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Issues For A Sprint Copy Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/board/241/sprint/578/issue",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"board",
+						"241",
+						"sprint",
+						"578",
+						"issue"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Issues For A Sprint Copy Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/board/241/sprint/578/issue",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"board",
+						"241",
+						"sprint",
+						"578",
+						"issue"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Rename A TH Sprint",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Basic YnNhdmFnZUBkYmkuY29tOmxnMmtsVVJZdURybHRQTlE5VjJyNTg1MA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TH 2020-06\"\n}"
+				},
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/sprint/578",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"sprint",
+						"578"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Set A TH Sprint Start/End Dates",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic YnNhdmFnZUBkYmkuY29tOmxnMmtsVVJZdURybHRQTlE5VjJyNTg1MA==",
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman."
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2020-04-30T12:24:00.000Z\",\n    \"endDate\": \"2020-05-19T12:24:00.000Z\"\n}"
+				},
+				"url": {
+					"raw": "https://davidsbridal.atlassian.net/rest/agile/1.0/sprint/578",
+					"protocol": "https",
+					"host": [
+						"davidsbridal",
+						"atlassian",
+						"net"
+					],
+					"path": [
+						"rest",
+						"agile",
+						"1.0",
+						"sprint",
+						"578"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

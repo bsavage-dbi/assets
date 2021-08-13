@@ -1,65 +1,812 @@
-{
-    "campaignName": "ReadyForPickupSms-Test",
-    "skill": "Store Questions",
-    "templateId": "H633606602464149",
-    "outboundNumber": "{{outboundNumber}}",
-    "consent": true,
-    "consumers": [
-        {
-            "consumerContent": {
-                "sms": "1{{BRIAN_CELL}}"
-            },
-            "variables": {
-                "1": "This is a test of the order pick up message - including customer information."
-            },
-            "personalInfo": {
-                "firstname": "Brian",
-                "lastname": "Savage",
-                "age": {
-                    "age": 49,
-                    "year": 1971,
-                    "month": 12,
-                    "day": 23
-                },
-                "contacts": [
-                    {
-                        "email": "bsavage@dbi.com",
-                        "phone": "+1 610-582-0359",
-                        "address": {
-                            "country": "United States",
-                            "region": "NA"
+[
+    {
+        "key": "DBICBP-625",
+        "issuetype": "Initiative [DBICBP]",
+        "summary": "Implement the Proof Of Concept of Digitize Welcome Desk | Phase 01",
+        "confluPg": null,
+        "confluPgPar": null,
+        "start": "2021-05-03",
+        "due": null,
+        "tstart": "2021-04-01",
+        "tend": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "Several David’s Bridal Store were included in an manual process to complete the proof of concept. The process includes send a message to selected customers with appointments through the Liveperson Proactive Messaging Systems and then interacting with them through the Liveperson Conversational Cloud. The only aspect of the process that cannot be emulated, without development, is the interactions between DBI and integrated systems, planned to be completed in Phase One."
                         }
-                    }
-                ],
-                "gender": "MALE",
-                "language": "en-US",
-                "company": "David's Bridal Inc."
+                    ]
+                }
+            ]
+        },
+        "wOver": "h1. Implement the Proof Of Concept of Digitize Welcome Desk | Phase 01\n<p>Several David’s Bridal Store were included in an manual process to complete the proof of concept. The process includes send a message to selected customers with appointments through the Liveperson Proactive Messaging Systems and then interacting with them through the Liveperson Conversational Cloud. The only aspect of the process that cannot be emulated, without development, is the interactions between DBI and integrated systems, planned to be completed in Phase One.</p>\n",
+        "links": [
+            {
+                "key": "DBICBP-626",
+                "parent": "DBICBP-625",
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Epic",
+                "summary": "Conduct Digitize Welcome Desk POC in Store 37",
+                "status": "Done"
             },
-            "customerInfo": {
-                "cstatus": "VIP",
-                "ctype": "Gold",
-                "customerId": "138766AC",
-                "balance": -200.99,
-                "currency": "EUR",
-                "socialId": "11256324780",
-                "imei": "3543546543545688",
-                "userName": "user000",
-                "companySize": 50000,
-                "companyBranch": "Philadelphia",
-                "accountName": "Bank of Silliness corp",
-                "role": "Product Manager",
-                "lastPaymentDate": {
-                    "day": 15,
-                    "month": 10,
-                    "year": 2020
-                },
-                "registrationDate": {
-                    "day": 23,
-                    "month": 5,
-                    "year": 2015
-                },
-                "loginStatus": 1
+            {
+                "key": "DBICBP-627",
+                "parent": "DBICBP-625",
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Epic",
+                "summary": "Conduct Digitize Welcome Desk POC in Store 88",
+                "status": "Done"
+            },
+            {
+                "key": "DBICBP-628",
+                "parent": "DBICBP-625",
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Epic",
+                "summary": "Conduct Digitize Welcome Desk POC in Store 130",
+                "status": "Done"
+            },
+            {
+                "key": "DBICBP-581",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Theme [DBICBP]",
+                "summary": "Digitize Welcome Desk | DBI Chat Bot Project",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-597",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What do we send Liveperson? Just phone number?  Can we use Appt Confirmation number.",
+                "status": "To Do"
+            },
+            {
+                "key": "DSTR-1",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "External System [DBICBP]",
+                "summary": "Conversational Cloud (aka: Live Engage) - Liveperson ",
+                "status": "To Do"
+            },
+            {
+                "key": "DSTR-9",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "External System [DBICBP]",
+                "summary": "Progressive Messaging - Liveperson ",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-489",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Technical Requirement [DBICB]",
+                "summary": "For all appointment types (excluding Walk-In and Virtual) replace the existing Appointment Reminder text with the following (need it to be by store):Appointment Reminder Proactive Text – Triggered 24 hours before appt startWill ask customers to confirm a…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-592",
+                "parent": null,
+                "linkedTo": "DBICBP-625",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "If appointment was already checked in, discard",
+                "status": "To Do"
             }
-        }
-    ]
-}
+        ]
+    },
+    {
+        "key": "DBICBP-585",
+        "issuetype": "Initiative [DBICBP]",
+        "summary": "Digitize Walk-In Appointments (with OOTB Timetrade Kiosk) for the Digitize Welcome Desk Project  | Phase 03",
+        "confluPg": null,
+        "confluPgPar": null,
+        "start": "2021-08-31",
+        "due": null,
+        "tstart": "2021-08-31",
+        "tend": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "In this phase contactless check in short code for use on personal device will be piloted. This will include leveraging the out of box TimeTrade solution (kiosk site)."
+                        }
+                    ]
+                }
+            ]
+        },
+        "wOver": "h1. Digitize Walk-In Appointments (with OOTB Timetrade Kiosk) for the Digitize Welcome Desk Project  | Phase 03\n<p>In this phase contactless check in short code for use on personal device will be piloted. This will include leveraging the out of box TimeTrade solution (kiosk site).</p>\n",
+        "links": [
+            {
+                "key": "DBICBP-616",
+                "parent": "DBICBP-585",
+                "linkedTo": "DBICBP-585",
+                "issuetype": "Epic",
+                "summary": "P02 | Build microsite to allow customer to check in to her appt herself in the store if she didn’t text here. [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-619",
+                "parent": "DBICBP-585",
+                "linkedTo": "DBICBP-585",
+                "issuetype": "Epic",
+                "summary": "P01 | Walk In Checkin - Did Not TEXT HERE [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-622",
+                "parent": "DBICBP-585",
+                "linkedTo": "DBICBP-585",
+                "issuetype": "Epic",
+                "summary": "P01 | Self Checkin - NO TEXT [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-581",
+                "parent": null,
+                "linkedTo": "DBICBP-585",
+                "issuetype": "Theme [DBICBP]",
+                "summary": "Digitize Welcome Desk | DBI Chat Bot Project",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-489",
+                "parent": null,
+                "linkedTo": "DBICBP-585",
+                "issuetype": "Technical Requirement [DBICB]",
+                "summary": "For all appointment types (excluding Walk-In and Virtual) replace the existing Appointment Reminder text with the following (need it to be by store):Appointment Reminder Proactive Text – Triggered 24 hours before appt startWill ask customers to confirm a…",
+                "status": "To Do"
+            }
+        ]
+    },
+    {
+        "key": "DBICBP-584",
+        "issuetype": "Initiative [DBICBP]",
+        "summary": "Integrate myCustomers and Time Trade Kiosk for the Digitize Welcome Desk Project | Phase 04",
+        "confluPg": null,
+        "confluPgPar": null,
+        "start": "2021-11-01",
+        "due": null,
+        "tstart": "2021-10-21",
+        "tend": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "In this phase myCustomers alerts on iPads for next appointment available for stylists will be introduced as well as a branded contactless check-in site and branded customer facing manager queuing system on TV screen."
+                        }
+                    ]
+                }
+            ]
+        },
+        "wOver": "h1. Integrate myCustomers and Time Trade Kiosk for the Digitize Welcome Desk Project | Phase 04\n<p>In this phase myCustomers alerts on iPads for next appointment available for stylists will be introduced as well as a branded contactless check-in site and branded customer facing manager queuing system on TV screen.</p>\n",
+        "links": [
+            {
+                "key": "DBICBP-629",
+                "parent": "DBICBP-584",
+                "linkedTo": "DBICBP-584",
+                "issuetype": "Epic",
+                "summary": "myCustomers alerts on iPads for next appointment available for stylists",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-630",
+                "parent": "DBICBP-584",
+                "linkedTo": "DBICBP-584",
+                "issuetype": "Epic",
+                "summary": "Add a Branded contactless Check-in Site",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-631",
+                "parent": "DBICBP-584",
+                "linkedTo": "DBICBP-584",
+                "issuetype": "Epic",
+                "summary": "Branded customer facing manager queuing system on TV screen",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-581",
+                "parent": null,
+                "linkedTo": "DBICBP-584",
+                "issuetype": "Theme [DBICBP]",
+                "summary": "Digitize Welcome Desk | DBI Chat Bot Project",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-489",
+                "parent": null,
+                "linkedTo": "DBICBP-584",
+                "issuetype": "Technical Requirement [DBICB]",
+                "summary": "For all appointment types (excluding Walk-In and Virtual) replace the existing Appointment Reminder text with the following (need it to be by store):Appointment Reminder Proactive Text – Triggered 24 hours before appt startWill ask customers to confirm a…",
+                "status": "To Do"
+            }
+        ]
+    },
+    {
+        "key": "DBICBP-583",
+        "issuetype": "Initiative [DBICBP]",
+        "summary": "Automate the POC for Booked Appointments with Auto Check In Functionality for the Digitize Welcome Desk Project | Phase 02 ",
+        "confluPg": null,
+        "confluPgPar": null,
+        "start": "2021-07-01",
+        "due": null,
+        "tstart": "2021-07-01",
+        "tend": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "The objective is to add interactive automation in Liveperson to the existing “Appointment Reminder Text Message” to auto-checkin an appt in Timetrade if Customer texts HERE. This will send a new Check-In Confirmation Text Message from Liveperson to the customer."
+                        }
+                    ]
+                }
+            ]
+        },
+        "wOver": "h1. Automate the POC for Booked Appointments with Auto Check In Functionality for the Digitize Welcome Desk Project | Phase 02 \n<p>The objective is to add interactive automation in Liveperson to the existing “Appointment Reminder Text Message” to auto-checkin an appt in Timetrade if Customer texts HERE. This will send a new Check-In Confirmation Text Message from Liveperson to the customer.</p>\n",
+        "links": [
+            {
+                "key": "DBICBP-580",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Assumption [DBICBP]",
+                "summary": "There will be NO KNOWN CHANGES needed to myCustomers, myAppointments or OAV for the Appointment Confirmation and/or Appointment Reminder Text Message.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-596",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Technical Constraint [DBICBP]",
+                "summary": "Appointment Text Message are being migrated to Proactive Message from Salesforce and will need completed prior to leveraging them for this project.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-494",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Modify US \"Appointment Confirmation Text Message\" | Welcome Desk",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-615",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Blocker to Digitize Welcome Desk|  Dependency Salesforce Migration",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-618",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Configure Liveperson for \"Appointment Reminder Text Messages\" | Welcome Desk",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-623",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Modify US \"Appointment Reminder Text Message\"- Auto Check In | Welcome Desk",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-641",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Modify the CA \"Appointment Reminder Text Message\"- Auto Check In | Welcome Desk",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-642",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Modify the CA \"Appointment Confirmation Text Message\" | Welcome Desk",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-616",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "P02 | Build microsite to allow customer to check in to her appt herself in the store if she didn’t text here. [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-617",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "P01 | Post Check-in Appointment Text [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-621",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "P01 | No Show Appointment Text [DWDDCB]",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-643",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "Configure Liveperson for \"Appointment Confirmation Text Messages\" | Welcome Desk",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-727",
+                "parent": "DBICBP-583",
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Epic",
+                "summary": "DBI System configured to send Text Message Content based on geo location.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-581",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Theme [DBICBP]",
+                "summary": "Digitize Welcome Desk | DBI Chat Bot Project",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-586",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the appt is a no show? – Since there will be no CSR in the store, request was to automatically set an appt to a No Show 60 minutes after start of appt.Today we don’t send a text to a No Show.  Next day we send a “Sorry we missed you” email.  Poss…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-597",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What do we send Liveperson? Just phone number?  Can we use Appt Confirmation number.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-598",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if it is a virtual appt?  How will that work?  Same as today, not included in this scope.  They will just get the existing “Virtual Appt Reminder” texts that are sent today.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-599",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if she texts HERE twice or after we manually check her in?  Discard a check-in request for an appt already checked in",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-600",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "Will we have enough information from Liveperson to know which appt to check-in in Timetrade?",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-601",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the appt is canceled after the Appt Reminder is sent?  Today we don’t send a text.  We should consider sending a Canceled Appt text that had a link to the Appt Booking BOT. NOTE:  If she had replied to the reminder text and opened a conversation,…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-602",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the customer does not text HERE?  How do we check her in? – Same as today, manually checkin in myAppt (but not preferred because no CSR at front)  Can we use a QR Code to send them to a microsite to check-in?",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-698",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Text Message [DBICB]",
+                "summary": "Virtual Appointment Confirmation Text Message | Canada | Version 1.0",
+                "status": "Open/New"
+            },
+            {
+                "key": "DBICBP-402",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Text Message [DBICB]",
+                "summary": "Appointment Confirmation Text Message | United States | Version 1.0",
+                "status": "In Content Review"
+            },
+            {
+                "key": "DBICBP-403",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Text Message [DBICB]",
+                "summary": "Appointment Reminder Text Message | Canada | Version 1.0",
+                "status": "In Content Review"
+            },
+            {
+                "key": "DBICBP-408",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Text Message [DBICB]",
+                "summary": "Appointment Confirmation Text Message | Canada | Version 1.0",
+                "status": "In Content Review"
+            },
+            {
+                "key": "DBICBP-490",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Business Requirement [DBICB]",
+                "summary": "An \"Appointment Confirmation Text Message\" shall be sent immediately following the appointment being booked.",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-489",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Technical Requirement [DBICB]",
+                "summary": "For all appointment types (excluding Walk-In and Virtual) replace the existing Appointment Reminder text with the following (need it to be by store):Appointment Reminder Proactive Text – Triggered 24 hours before appt startWill ask customers to confirm a…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-593",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Business Requirement [DBICB]",
+                "summary": "Customers shall be able to check-in when arriving at their appointment by texting HERE.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-595",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Technical Requirement [DBICB]",
+                "summary": "When a customer replies to an \"Appointment Reminder Text Message\" with the word “HERE“ the Liveperson System shall make an API call to the DBI wrapper service with the confirmation number to check the user in.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-638",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Business Requirement [DBICB]",
+                "summary": "Build capability for customer to checkin herself if she doesn’t check-in",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-640",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Business Requirement [DBICB]",
+                "summary": "An \"Appointment Confirmation Text Message\" shall be sent to the customer immediately after the appointment has been scheduled in the DBI Appointment Management Systems.\n\n",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-481",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "To ensure users phone number is their own + valid phone, we send a verification code via Twilio ",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-589",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "Customer does not reply to the Appointment Confirmation Text Sent to her.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-590",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "Customer arrives at the store for her appointment and does not text HERE.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-591",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "Customer arrives at the store for her appointment and text HERE.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-592",
+                "parent": null,
+                "linkedTo": "DBICBP-583",
+                "issuetype": "Use Case [DBICB]",
+                "summary": "If appointment was already checked in, discard",
+                "status": "To Do"
+            }
+        ]
+    },
+    {
+        "key": "DBICBP-581",
+        "issuetype": "Theme [DBICBP]",
+        "summary": "Digitize Welcome Desk | DBI Chat Bot Project",
+        "confluPg": "2522120287",
+        "confluPgPar": null,
+        "start": null,
+        "due": null,
+        "tstart": null,
+        "tend": null,
+        "description": {
+            "version": 1,
+            "type": "doc",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "As a company, David’s Bridal decided to leverage opportunities around interacting with customer appointments to help better serve her through text message communications allowing her to interact with stores about their appointments. As a company, David’s Bridal has elected to focus our "
+                        },
+                        {
+                            "type": "text",
+                            "text": "Continuous Improvement Effort",
+                            "marks": [
+                                {
+                                    "type": "em"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": " by committing to leveraging new opportunities available to us by enhancing our customers experience when it comes to Appointments. In this project teams across all practice areas are collectively leveraging Text Messaging and the interactive services available to us through our strategic partner Liveperson. Once completed customers will have the option to be reminded of their appointment, confirm their commitment to their appointment, check in when arriving at their appointment, and interact with a stylist about their appoint at the store their appointment is scheduled at. Additionally, customers with virtual appointments will be handled with the same level service less checking in for theri virtual appointment. "
+                        }
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": "Digitizing "
+                        },
+                        {
+                            "type": "text",
+                            "text": "Welcome Desk",
+                            "marks": [
+                                {
+                                    "type": "em"
+                                },
+                                {
+                                    "type": "strong"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "text": " Experience is certain to capture more walk-ins, strengthen customer loyalty, and so much more - increase Net Promoter Score (NPS). "
+                        }
+                    ]
+                },
+                {
+                    "type": "bulletList",
+                    "content": [
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "ChatBot: ",
+                                            "marks": [
+                                                {
+                                                    "type": "strong"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Pre-Appt Msg: confirm appt info, reschedule, click for directions, completing myCustomer profile, chat 1:1 with store; Appt Status Msg: check-in via text, notification when stylist is available"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "Kiosk",
+                                            "marks": [
+                                                {
+                                                    "type": "strong"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": ": Check-in: customers with an appt can quickly let us know she’s here; Walk-in: capture walk-in customer’s information digitally"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "listItem",
+                            "content": [
+                                {
+                                    "type": "paragraph",
+                                    "content": [
+                                        {
+                                            "type": "text",
+                                            "text": "Streamline Process",
+                                            "marks": [
+                                                {
+                                                    "type": "strong"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": ": "
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Open availability view*, Approximate wait times*, Virtual queue, Notify stylist when appt arrives*",
+                                            "marks": [
+                                                {
+                                                    "type": "em"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "wOver": "h1. Digitize Welcome Desk | DBI Chat Bot Project\n<p>As a company, David’s Bridal decided to leverage opportunities around interacting with customer appointments to help better serve her through text message communications allowing her to interact with stores about their appointments. As a company, David’s Bridal has elected to focus our <em>Continuous Improvement Effort</em> by committing to leveraging new opportunities available to us by enhancing our customers experience when it comes to Appointments. In this project teams across all practice areas are collectively leveraging Text Messaging and the interactive services available to us through our strategic partner Liveperson. Once completed customers will have the option to be reminded of their appointment, confirm their commitment to their appointment, check in when arriving at their appointment, and interact with a stylist about their appoint at the store their appointment is scheduled at. Additionally, customers with virtual appointments will be handled with the same level service less checking in for theri virtual appointment. </p>\n\n<p>Digitizing <b><em>Welcome Desk</em></b> Experience is certain to capture more walk-ins, strengthen customer loyalty, and so much more - increase Net Promoter Score (NPS). </p>\n\n<ul>\n\t<li><b>ChatBot:</b> Pre-Appt Msg: confirm appt info, reschedule, click for directions, completing myCustomer profile, chat 1:1 with store; Appt Status Msg: check-in via text, notification when stylist is available</li>\n\t<li><b>Kiosk</b>: Check-in: customers with an appt can quickly let us know she’s here; Walk-in: capture walk-in customer’s information digitally</li>\n\t<li><b>Streamline Process</b>: <em>Open availability view*, Approximate wait times*, Virtual queue, Notify stylist when appt arrives*</em></li>\n</ul>\n\n",
+        "links": [
+            {
+                "key": "DBICBP-582",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Action Item [DBICBP]",
+                "summary": "Consolidate research in Confluence and review project plan.",
+                "status": "Open/New"
+            },
+            {
+                "key": "DBICBP-583",
+                "parent": "DBICBP-581",
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Initiative [DBICBP]",
+                "summary": "Automate the POC for Booked Appointments with Auto Check In Functionality for the Digitize Welcome Desk Project | Phase 02 ",
+                "status": "In Progress"
+            },
+            {
+                "key": "DBICBP-585",
+                "parent": "DBICBP-581",
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Initiative [DBICBP]",
+                "summary": "Digitize Walk-In Appointments (with OOTB Timetrade Kiosk) for the Digitize Welcome Desk Project  | Phase 03",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-584",
+                "parent": "DBICBP-581",
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Initiative [DBICBP]",
+                "summary": "Integrate myCustomers and Time Trade Kiosk for the Digitize Welcome Desk Project | Phase 04",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-625",
+                "parent": "DBICBP-581",
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Initiative [DBICBP]",
+                "summary": "Implement the Proof Of Concept of Digitize Welcome Desk | Phase 01",
+                "status": "Done"
+            },
+            {
+                "key": "DBICBP-586",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the appt is a no show? – Since there will be no CSR in the store, request was to automatically set an appt to a No Show 60 minutes after start of appt.Today we don’t send a text to a No Show.  Next day we send a “Sorry we missed you” email.  Poss…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-597",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What do we send Liveperson? Just phone number?  Can we use Appt Confirmation number.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-598",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if it is a virtual appt?  How will that work?  Same as today, not included in this scope.  They will just get the existing “Virtual Appt Reminder” texts that are sent today.",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-599",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if she texts HERE twice or after we manually check her in?  Discard a check-in request for an appt already checked in",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-600",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "Will we have enough information from Liveperson to know which appt to check-in in Timetrade?",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-601",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the appt is canceled after the Appt Reminder is sent?  Today we don’t send a text.  We should consider sending a Canceled Appt text that had a link to the Appt Booking BOT. NOTE:  If she had replied to the reminder text and opened a conversation,…",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-602",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Question [DBICBP]",
+                "summary": "What if the customer does not text HERE?  How do we check her in? – Same as today, manually checkin in myAppt (but not preferred because no CSR at front)  Can we use a QR Code to send them to a microsite to check-in?",
+                "status": "To Do"
+            },
+            {
+                "key": "DBICBP-402",
+                "parent": null,
+                "linkedTo": "DBICBP-581",
+                "issuetype": "Text Message [DBICB]",
+                "summary": "Appointment Confirmation Text Message | United States | Version 1.0",
+                "status": "In Content Review"
+            }
+        ]
+    }
+]

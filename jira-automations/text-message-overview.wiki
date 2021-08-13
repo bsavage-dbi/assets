@@ -1,0 +1,49 @@
+{{issue.summary}}\\
+{{issue.description}}
+
+{{#if(not(lookupIssues.isEmpty))}}
+----
+{panel:title=This project has been broken into the following high-level deliverables:} 
+{{#lookupIssues}}
+* {{summary}} {{issueType.name}}
+{{/}}
+{panel}
+{{/}}
+
+{{#if(not(issue.issuelinks.isEmpty))}}
+----
+{panel:title=Impacted or leveraged systems:}
+    {{#issue.issuelinks}}
+         * {{issue.summary}} ({{issue.issueType.name}})\\
+     {{/}}
+{panel}
+
+
+{{/}}
+
+
+
+
+
+{{issue.summary}}\\
+{{issue.description}}
+
+{{#if(not(lookupIssues.isEmpty))}}
+----
+{panel:title=This project has been broken into the following high-level deliverables:} 
+{{#lookupIssues}}
+* {{summary}} {{issueType.name}}
+{{/}}
+{panel}
+{{/}}
+
+{{#if(not(issue.issuelinks.isEmpty))}}
+----
+{panel:title=Impacted or leveraged systems:}
+    {{#issue.issuelinks}}
+         * {{issue.summary}} ({{issue.issueType.name}})\\
+     {{/}}
+{panel}
+
+
+{{/}}

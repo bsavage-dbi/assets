@@ -28,10 +28,16 @@ end box
 activate DBI_API
 
 DBI_DATA -> DBI_API : Send Data
+
 DBI_API -> LPPM : Auth Request
 DBI_API <- LPPM : Auth Response
-DBI_API -> LPPM : send message
 
+DBI_API -> LPPM : send message
+note over LPPM #EEE
+Proactive Messaging appends
+the OPT OUT Message to the 
+message before sending to Twilio
+end note
 deactivate DBI_API
 
 box "Liveperson" #D4E1F5
@@ -66,7 +72,7 @@ activate LPCC
 LPCC <- DBI_CUS : she replies to text
 
 
-
+activate LPQ
 LPQ <- LPCC : reply is queued
 LPQ <-> DBI_CUS : skill interacts with customer
 LPQ <-> DBI_CUS : skill interacts with customer

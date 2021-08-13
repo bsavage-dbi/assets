@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "b2cb6352-b314-4421-a822-41a641d5acf1",
+		"name": "DBI Staging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Staging Inventory Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "lg2klURYuDrltPNQ9V2r5850",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "bsavage@dbi.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /dev/login HTTP/1.1",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " 8hpmajtmn5.execute-api.us-east-1.amazonaws.com",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": " bsavage.dbi",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": " Ou8!To!cMe2",
+						"type": "text"
+					},
+					{
+						"key": "bearertoken",
+						"value": " 1234567890",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": " PostmanRuntime/7.15.2",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " */*",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": " no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": " 8hpmajtmn5.execute-api.us-east-1.amazonaws.com",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": " gzip, deflate",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "cache-control",
+						"value": " no-cach",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2020-05-21T12:24:00.000Z\",\n    \"endDate\": \"2020-06-10T12:24:00.000Z\"\n}"
+				},
+				"url": {
+					"raw": "https://8hpmajtmn5.execute-api.us-east-1.amazonaws.com",
+					"protocol": "https",
+					"host": [
+						"8hpmajtmn5",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Basic Jira Call",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://davidsbridal.atlassian.net/rest/agile/latest/board/241",
+							"protocol": "https",
+							"host": [
+								"davidsbridal",
+								"atlassian",
+								"net"
+							],
+							"path": [
+								"rest",
+								"agile",
+								"latest",
+								"board",
+								"241"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "AtlassianProxy/1.15.8.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, no-transform"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=315360000; includeSubDomains; preload"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Apr 2020 20:27:43 GMT"
+						},
+						{
+							"key": "ATL-TraceId",
+							"value": "977a504221dfdd1b"
+						},
+						{
+							"key": "X-AREQUESTID",
+							"value": "e524dd1a-88c4-4671-9858-1dd4fd8d096d"
+						},
+						{
+							"key": "X-AACCOUNTID",
+							"value": "5dc9b59605b5ae0ddd6fa6a9"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Timing-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Micros-Issuer",
+							"value": "micros/edge-authenticator"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "atlassian.xsrf.token=B6PV-R6IL-ZF9W-JBJ1_4267eeb7a24baaef22bb82cb3287cd134078ae27_lin; Path=/; Secure"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "report-uri=\"https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy\", enforce, max-age=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 241,\n    \"self\": \"https://davidsbridal.atlassian.net/rest/agile/1.0/board/241\",\n    \"name\": \"TransactionHub Board by Story\",\n    \"type\": \"scrum\",\n    \"location\": {\n        \"projectId\": 12103,\n        \"displayName\": \"Transaction Hub (TH)\",\n        \"projectName\": \"Transaction Hub\",\n        \"projectKey\": \"TH\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"/secure/projectavatar?size=small&s=small&pid=12103&avatarId=13164\",\n        \"name\": \"Transaction Hub (TH)\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
