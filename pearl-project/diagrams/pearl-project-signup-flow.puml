@@ -1,0 +1,57 @@
+@startuml
+
+skinparam sequenceBoxBorderColor #black
+skinparam NoteBorderColor #black
+
+skinparam sequence {
+    ArrowColor DarkBlue
+    ActorBackgroundColor White
+    ActorBorderColor black
+    LifeLineBorderColor DarkBlue
+    LifeLineBackgroundColor #A9DCDF
+    BoxPadding 20
+    ParticipantPadding 20
+    ParticipantBorderColor Black
+    ParticipantBackgroundColor White
+}
+
+autonumber "<b>[00] "
+
+footer created by Brian Savage 08/23/2021 \n all rights reservrd David's Bridal Inc.
+
+title Pearl Project Vendor Subscription Flow
+
+actor "DBI Strtegic Partner" as DBI_SPV
+
+box "DBI" #D4E1F5
+
+participant "Pearl Sign Up Form" as DBI_PRL_SUF
+participant "DBI CRM" as DBI_CRM
+end box
+
+
+DBI_SPV -> DBI_PRL_SUF : Access & Complete Form
+DBI_PRL_SUF -> DBI_CRM : send form submission
+
+note over DBI_PRL_SUF, DBI_CRM #EEE
+<b>FIELDS SENT TO CRM API
+- first name
+- last name
+- email address
+- phone number
+- industry (select)
+- company name
+- website
+- role / title
+- city
+- state
+- zip
+- where heard about report
+- captured terms and conditions (true / false)
+end note
+
+DBI_PRL_SUF <- DBI_CRM : API Response
+DBI_SPV <- DBI_PRL_SUF : Display Confirmation & Download
+
+
+@enduml

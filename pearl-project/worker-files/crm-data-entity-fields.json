@@ -1,0 +1,2823 @@
+// 20210823132258
+// https://pearl.api.crm.dynamics.com/api/data/v9.2/
+
+{
+    "@odata.context": "https://pearl.api.crm.dynamics.com/api/data/v9.2/$metadata",
+    "value": [
+      {
+        "name": "accountleadscollection",
+        "kind": "EntitySet",
+        "url": "accountleadscollection"
+      },
+      {
+        "name": "accounts",
+        "kind": "EntitySet",
+        "url": "accounts"
+      },
+      {
+        "name": "aciviewmappers",
+        "kind": "EntitySet",
+        "url": "aciviewmappers"
+      },
+      {
+        "name": "actioncards",
+        "kind": "EntitySet",
+        "url": "actioncards"
+      },
+      {
+        "name": "actioncarduserstates",
+        "kind": "EntitySet",
+        "url": "actioncarduserstates"
+      },
+      {
+        "name": "activityfileattachments",
+        "kind": "EntitySet",
+        "url": "activityfileattachments"
+      },
+      {
+        "name": "activitymimeattachments",
+        "kind": "EntitySet",
+        "url": "activitymimeattachments"
+      },
+      {
+        "name": "activitymonitors",
+        "kind": "EntitySet",
+        "url": "activitymonitors"
+      },
+      {
+        "name": "activityparties",
+        "kind": "EntitySet",
+        "url": "activityparties"
+      },
+      {
+        "name": "activitypointers",
+        "kind": "EntitySet",
+        "url": "activitypointers"
+      },
+      {
+        "name": "annotations",
+        "kind": "EntitySet",
+        "url": "annotations"
+      },
+      {
+        "name": "annualfiscalcalendars",
+        "kind": "EntitySet",
+        "url": "annualfiscalcalendars"
+      },
+      {
+        "name": "appactions",
+        "kind": "EntitySet",
+        "url": "appactions"
+      },
+      {
+        "name": "appconfiginstances",
+        "kind": "EntitySet",
+        "url": "appconfiginstances"
+      },
+      {
+        "name": "appconfigmasters",
+        "kind": "EntitySet",
+        "url": "appconfigmasters"
+      },
+      {
+        "name": "appconfigs",
+        "kind": "EntitySet",
+        "url": "appconfigs"
+      },
+      {
+        "name": "applicationuserprofileset",
+        "kind": "EntitySet",
+        "url": "applicationuserprofileset"
+      },
+      {
+        "name": "applicationuserroleset",
+        "kind": "EntitySet",
+        "url": "applicationuserroleset"
+      },
+      {
+        "name": "applicationusers",
+        "kind": "EntitySet",
+        "url": "applicationusers"
+      },
+      {
+        "name": "appmodulecomponents",
+        "kind": "EntitySet",
+        "url": "appmodulecomponents"
+      },
+      {
+        "name": "appmodulerolescollection",
+        "kind": "EntitySet",
+        "url": "appmodulerolescollection"
+      },
+      {
+        "name": "appmodules",
+        "kind": "EntitySet",
+        "url": "appmodules"
+      },
+      {
+        "name": "appnotifications",
+        "kind": "EntitySet",
+        "url": "appnotifications"
+      },
+      {
+        "name": "appointments",
+        "kind": "EntitySet",
+        "url": "appointments"
+      },
+      {
+        "name": "asyncoperations",
+        "kind": "EntitySet",
+        "url": "asyncoperations"
+      },
+      {
+        "name": "attachments",
+        "kind": "EntitySet",
+        "url": "attachments"
+      },
+      {
+        "name": "attributeimageconfigs",
+        "kind": "EntitySet",
+        "url": "attributeimageconfigs"
+      },
+      {
+        "name": "attributes",
+        "kind": "EntitySet",
+        "url": "attributes"
+      },
+      {
+        "name": "audits",
+        "kind": "EntitySet",
+        "url": "audits"
+      },
+      {
+        "name": "availabletimescollection",
+        "kind": "EntitySet",
+        "url": "availabletimescollection"
+      },
+      {
+        "name": "availabletimesdatasources",
+        "kind": "EntitySet",
+        "url": "availabletimesdatasources"
+      },
+      {
+        "name": "bookableresourcebookingheaders",
+        "kind": "EntitySet",
+        "url": "bookableresourcebookingheaders"
+      },
+      {
+        "name": "bookableresourcebookings",
+        "kind": "EntitySet",
+        "url": "bookableresourcebookings"
+      },
+      {
+        "name": "bookableresourcecategories",
+        "kind": "EntitySet",
+        "url": "bookableresourcecategories"
+      },
+      {
+        "name": "bookableresourcecategoryassns",
+        "kind": "EntitySet",
+        "url": "bookableresourcecategoryassns"
+      },
+      {
+        "name": "bookableresourcecharacteristics",
+        "kind": "EntitySet",
+        "url": "bookableresourcecharacteristics"
+      },
+      {
+        "name": "bookableresourcegroups",
+        "kind": "EntitySet",
+        "url": "bookableresourcegroups"
+      },
+      {
+        "name": "bookableresources",
+        "kind": "EntitySet",
+        "url": "bookableresources"
+      },
+      {
+        "name": "bookingstatuses",
+        "kind": "EntitySet",
+        "url": "bookingstatuses"
+      },
+      {
+        "name": "bot_botcomponentset",
+        "kind": "EntitySet",
+        "url": "bot_botcomponentset"
+      },
+      {
+        "name": "bot_environmentvariabledefinitionset",
+        "kind": "EntitySet",
+        "url": "bot_environmentvariabledefinitionset"
+      },
+      {
+        "name": "botcomponent_botcomponentset",
+        "kind": "EntitySet",
+        "url": "botcomponent_botcomponentset"
+      },
+      {
+        "name": "botcomponent_environmentvariabledefinitionset",
+        "kind": "EntitySet",
+        "url": "botcomponent_environmentvariabledefinitionset"
+      },
+      {
+        "name": "botcomponent_workflowset",
+        "kind": "EntitySet",
+        "url": "botcomponent_workflowset"
+      },
+      {
+        "name": "botcomponents",
+        "kind": "EntitySet",
+        "url": "botcomponents"
+      },
+      {
+        "name": "bots",
+        "kind": "EntitySet",
+        "url": "bots"
+      },
+      {
+        "name": "bulkdeletefailures",
+        "kind": "EntitySet",
+        "url": "bulkdeletefailures"
+      },
+      {
+        "name": "bulkdeleteoperations",
+        "kind": "EntitySet",
+        "url": "bulkdeleteoperations"
+      },
+      {
+        "name": "bulkoperationlogs",
+        "kind": "EntitySet",
+        "url": "bulkoperationlogs"
+      },
+      {
+        "name": "bulkoperations",
+        "kind": "EntitySet",
+        "url": "bulkoperations"
+      },
+      {
+        "name": "businessunitnewsarticles",
+        "kind": "EntitySet",
+        "url": "businessunitnewsarticles"
+      },
+      {
+        "name": "businessunits",
+        "kind": "EntitySet",
+        "url": "businessunits"
+      },
+      {
+        "name": "calendarrules",
+        "kind": "EntitySet",
+        "url": "calendarrules"
+      },
+      {
+        "name": "calendars",
+        "kind": "EntitySet",
+        "url": "calendars"
+      },
+      {
+        "name": "callbackregistrations",
+        "kind": "EntitySet",
+        "url": "callbackregistrations"
+      },
+      {
+        "name": "campaignactivities",
+        "kind": "EntitySet",
+        "url": "campaignactivities"
+      },
+      {
+        "name": "campaignactivityitems",
+        "kind": "EntitySet",
+        "url": "campaignactivityitems"
+      },
+      {
+        "name": "campaignitems",
+        "kind": "EntitySet",
+        "url": "campaignitems"
+      },
+      {
+        "name": "campaignresponses",
+        "kind": "EntitySet",
+        "url": "campaignresponses"
+      },
+      {
+        "name": "campaigns",
+        "kind": "EntitySet",
+        "url": "campaigns"
+      },
+      {
+        "name": "canvasapps",
+        "kind": "EntitySet",
+        "url": "canvasapps"
+      },
+      {
+        "name": "catalogassignments",
+        "kind": "EntitySet",
+        "url": "catalogassignments"
+      },
+      {
+        "name": "catalogs",
+        "kind": "EntitySet",
+        "url": "catalogs"
+      },
+      {
+        "name": "categories",
+        "kind": "EntitySet",
+        "url": "categories"
+      },
+      {
+        "name": "channelaccessprofileentityaccesslevels",
+        "kind": "EntitySet",
+        "url": "channelaccessprofileentityaccesslevels"
+      },
+      {
+        "name": "characteristics",
+        "kind": "EntitySet",
+        "url": "characteristics"
+      },
+      {
+        "name": "columnmappings",
+        "kind": "EntitySet",
+        "url": "columnmappings"
+      },
+      {
+        "name": "competitoraddresses",
+        "kind": "EntitySet",
+        "url": "competitoraddresses"
+      },
+      {
+        "name": "competitorproducts",
+        "kind": "EntitySet",
+        "url": "competitorproducts"
+      },
+      {
+        "name": "competitors",
+        "kind": "EntitySet",
+        "url": "competitors"
+      },
+      {
+        "name": "competitorsalesliteratures",
+        "kind": "EntitySet",
+        "url": "competitorsalesliteratures"
+      },
+      {
+        "name": "complexcontrols",
+        "kind": "EntitySet",
+        "url": "complexcontrols"
+      },
+      {
+        "name": "connectionreferences",
+        "kind": "EntitySet",
+        "url": "connectionreferences"
+      },
+      {
+        "name": "connectionroleassociations",
+        "kind": "EntitySet",
+        "url": "connectionroleassociations"
+      },
+      {
+        "name": "connectionroles",
+        "kind": "EntitySet",
+        "url": "connectionroles"
+      },
+      {
+        "name": "connections",
+        "kind": "EntitySet",
+        "url": "connections"
+      },
+      {
+        "name": "connectors",
+        "kind": "EntitySet",
+        "url": "connectors"
+      },
+      {
+        "name": "constraintbasedgroups",
+        "kind": "EntitySet",
+        "url": "constraintbasedgroups"
+      },
+      {
+        "name": "contactinvoicescollection",
+        "kind": "EntitySet",
+        "url": "contactinvoicescollection"
+      },
+      {
+        "name": "contactleadscollection",
+        "kind": "EntitySet",
+        "url": "contactleadscollection"
+      },
+      {
+        "name": "contactorderscollection",
+        "kind": "EntitySet",
+        "url": "contactorderscollection"
+      },
+      {
+        "name": "contactquotescollection",
+        "kind": "EntitySet",
+        "url": "contactquotescollection"
+      },
+      {
+        "name": "contacts",
+        "kind": "EntitySet",
+        "url": "contacts"
+      },
+      {
+        "name": "contractdetails",
+        "kind": "EntitySet",
+        "url": "contractdetails"
+      },
+      {
+        "name": "contracts",
+        "kind": "EntitySet",
+        "url": "contracts"
+      },
+      {
+        "name": "contracttemplates",
+        "kind": "EntitySet",
+        "url": "contracttemplates"
+      },
+      {
+        "name": "conversationtranscripts",
+        "kind": "EntitySet",
+        "url": "conversationtranscripts"
+      },
+      {
+        "name": "customapirequestparameters",
+        "kind": "EntitySet",
+        "url": "customapirequestparameters"
+      },
+      {
+        "name": "customapiresponseproperties",
+        "kind": "EntitySet",
+        "url": "customapiresponseproperties"
+      },
+      {
+        "name": "customapis",
+        "kind": "EntitySet",
+        "url": "customapis"
+      },
+      {
+        "name": "customcontroldefaultconfigs",
+        "kind": "EntitySet",
+        "url": "customcontroldefaultconfigs"
+      },
+      {
+        "name": "customcontrolresources",
+        "kind": "EntitySet",
+        "url": "customcontrolresources"
+      },
+      {
+        "name": "customcontrols",
+        "kind": "EntitySet",
+        "url": "customcontrols"
+      },
+      {
+        "name": "customeraddresses",
+        "kind": "EntitySet",
+        "url": "customeraddresses"
+      },
+      {
+        "name": "datalakefolderpermissions",
+        "kind": "EntitySet",
+        "url": "datalakefolderpermissions"
+      },
+      {
+        "name": "datalakefolders",
+        "kind": "EntitySet",
+        "url": "datalakefolders"
+      },
+      {
+        "name": "datalakeworkspacepermissions",
+        "kind": "EntitySet",
+        "url": "datalakeworkspacepermissions"
+      },
+      {
+        "name": "datalakeworkspaces",
+        "kind": "EntitySet",
+        "url": "datalakeworkspaces"
+      },
+      {
+        "name": "dataperformances",
+        "kind": "EntitySet",
+        "url": "dataperformances"
+      },
+      {
+        "name": "dependencies",
+        "kind": "EntitySet",
+        "url": "dependencies"
+      },
+      {
+        "name": "discounts",
+        "kind": "EntitySet",
+        "url": "discounts"
+      },
+      {
+        "name": "discounttypes",
+        "kind": "EntitySet",
+        "url": "discounttypes"
+      },
+      {
+        "name": "displaystrings",
+        "kind": "EntitySet",
+        "url": "displaystrings"
+      },
+      {
+        "name": "documenttemplates",
+        "kind": "EntitySet",
+        "url": "documenttemplates"
+      },
+      {
+        "name": "duplicaterecords",
+        "kind": "EntitySet",
+        "url": "duplicaterecords"
+      },
+      {
+        "name": "duplicateruleconditions",
+        "kind": "EntitySet",
+        "url": "duplicateruleconditions"
+      },
+      {
+        "name": "duplicaterules",
+        "kind": "EntitySet",
+        "url": "duplicaterules"
+      },
+      {
+        "name": "dynamicproperties",
+        "kind": "EntitySet",
+        "url": "dynamicproperties"
+      },
+      {
+        "name": "dynamicpropertyassociations",
+        "kind": "EntitySet",
+        "url": "dynamicpropertyassociations"
+      },
+      {
+        "name": "dynamicpropertyinstances",
+        "kind": "EntitySet",
+        "url": "dynamicpropertyinstances"
+      },
+      {
+        "name": "dynamicpropertyoptionsetitems",
+        "kind": "EntitySet",
+        "url": "dynamicpropertyoptionsetitems"
+      },
+      {
+        "name": "emails",
+        "kind": "EntitySet",
+        "url": "emails"
+      },
+      {
+        "name": "emailserverprofiles",
+        "kind": "EntitySet",
+        "url": "emailserverprofiles"
+      },
+      {
+        "name": "entities",
+        "kind": "EntitySet",
+        "url": "entities"
+      },
+      {
+        "name": "entitlementchannels",
+        "kind": "EntitySet",
+        "url": "entitlementchannels"
+      },
+      {
+        "name": "entitlementcontactscollection",
+        "kind": "EntitySet",
+        "url": "entitlementcontactscollection"
+      },
+      {
+        "name": "entitlemententityallocationtypemappings",
+        "kind": "EntitySet",
+        "url": "entitlemententityallocationtypemappings"
+      },
+      {
+        "name": "entitlementproductscollection",
+        "kind": "EntitySet",
+        "url": "entitlementproductscollection"
+      },
+      {
+        "name": "entitlements",
+        "kind": "EntitySet",
+        "url": "entitlements"
+      },
+      {
+        "name": "entitlementtemplatechannels",
+        "kind": "EntitySet",
+        "url": "entitlementtemplatechannels"
+      },
+      {
+        "name": "entitlementtemplateproductscollection",
+        "kind": "EntitySet",
+        "url": "entitlementtemplateproductscollection"
+      },
+      {
+        "name": "entitlementtemplates",
+        "kind": "EntitySet",
+        "url": "entitlementtemplates"
+      },
+      {
+        "name": "entityanalyticsconfigs",
+        "kind": "EntitySet",
+        "url": "entityanalyticsconfigs"
+      },
+      {
+        "name": "entitydataproviders",
+        "kind": "EntitySet",
+        "url": "entitydataproviders"
+      },
+      {
+        "name": "entityimageconfigs",
+        "kind": "EntitySet",
+        "url": "entityimageconfigs"
+      },
+      {
+        "name": "entityindexes",
+        "kind": "EntitySet",
+        "url": "entityindexes"
+      },
+      {
+        "name": "entitykeys",
+        "kind": "EntitySet",
+        "url": "entitykeys"
+      },
+      {
+        "name": "entityrelationships",
+        "kind": "EntitySet",
+        "url": "entityrelationships"
+      },
+      {
+        "name": "environmentvariabledefinitions",
+        "kind": "EntitySet",
+        "url": "environmentvariabledefinitions"
+      },
+      {
+        "name": "environmentvariablevalues",
+        "kind": "EntitySet",
+        "url": "environmentvariablevalues"
+      },
+      {
+        "name": "equipments",
+        "kind": "EntitySet",
+        "url": "equipments"
+      },
+      {
+        "name": "exchangesyncidmappings",
+        "kind": "EntitySet",
+        "url": "exchangesyncidmappings"
+      },
+      {
+        "name": "expiredprocesses",
+        "kind": "EntitySet",
+        "url": "expiredprocesses"
+      },
+      {
+        "name": "exportsolutionuploads",
+        "kind": "EntitySet",
+        "url": "exportsolutionuploads"
+      },
+      {
+        "name": "faxes",
+        "kind": "EntitySet",
+        "url": "faxes"
+      },
+      {
+        "name": "featurecontrolsettings",
+        "kind": "EntitySet",
+        "url": "featurecontrolsettings"
+      },
+      {
+        "name": "feedback",
+        "kind": "EntitySet",
+        "url": "feedback"
+      },
+      {
+        "name": "fieldpermissions",
+        "kind": "EntitySet",
+        "url": "fieldpermissions"
+      },
+      {
+        "name": "fieldsecurityprofiles",
+        "kind": "EntitySet",
+        "url": "fieldsecurityprofiles"
+      },
+      {
+        "name": "fileattachments",
+        "kind": "EntitySet",
+        "url": "fileattachments"
+      },
+      {
+        "name": "fixedmonthlyfiscalcalendars",
+        "kind": "EntitySet",
+        "url": "fixedmonthlyfiscalcalendars"
+      },
+      {
+        "name": "flowmachinegroups",
+        "kind": "EntitySet",
+        "url": "flowmachinegroups"
+      },
+      {
+        "name": "flowmachines",
+        "kind": "EntitySet",
+        "url": "flowmachines"
+      },
+      {
+        "name": "flowsessions",
+        "kind": "EntitySet",
+        "url": "flowsessions"
+      },
+      {
+        "name": "goalrollupqueries",
+        "kind": "EntitySet",
+        "url": "goalrollupqueries"
+      },
+      {
+        "name": "goals",
+        "kind": "EntitySet",
+        "url": "goals"
+      },
+      {
+        "name": "importdataset",
+        "kind": "EntitySet",
+        "url": "importdataset"
+      },
+      {
+        "name": "importentitymappings",
+        "kind": "EntitySet",
+        "url": "importentitymappings"
+      },
+      {
+        "name": "importfiles",
+        "kind": "EntitySet",
+        "url": "importfiles"
+      },
+      {
+        "name": "importjobs",
+        "kind": "EntitySet",
+        "url": "importjobs"
+      },
+      {
+        "name": "importlogs",
+        "kind": "EntitySet",
+        "url": "importlogs"
+      },
+      {
+        "name": "importmaps",
+        "kind": "EntitySet",
+        "url": "importmaps"
+      },
+      {
+        "name": "imports",
+        "kind": "EntitySet",
+        "url": "imports"
+      },
+      {
+        "name": "incidentknowledgebaserecords",
+        "kind": "EntitySet",
+        "url": "incidentknowledgebaserecords"
+      },
+      {
+        "name": "incidentresolutions",
+        "kind": "EntitySet",
+        "url": "incidentresolutions"
+      },
+      {
+        "name": "incidents",
+        "kind": "EntitySet",
+        "url": "incidents"
+      },
+      {
+        "name": "indexattributes",
+        "kind": "EntitySet",
+        "url": "indexattributes"
+      },
+      {
+        "name": "interactionforemails",
+        "kind": "EntitySet",
+        "url": "interactionforemails"
+      },
+      {
+        "name": "invaliddependencies",
+        "kind": "EntitySet",
+        "url": "invaliddependencies"
+      },
+      {
+        "name": "invoicedetails",
+        "kind": "EntitySet",
+        "url": "invoicedetails"
+      },
+      {
+        "name": "invoices",
+        "kind": "EntitySet",
+        "url": "invoices"
+      },
+      {
+        "name": "kbarticlecomments",
+        "kind": "EntitySet",
+        "url": "kbarticlecomments"
+      },
+      {
+        "name": "kbarticles",
+        "kind": "EntitySet",
+        "url": "kbarticles"
+      },
+      {
+        "name": "kbarticletemplates",
+        "kind": "EntitySet",
+        "url": "kbarticletemplates"
+      },
+      {
+        "name": "keyvaultreferences",
+        "kind": "EntitySet",
+        "url": "keyvaultreferences"
+      },
+      {
+        "name": "knowledgearticlecategories",
+        "kind": "EntitySet",
+        "url": "knowledgearticlecategories"
+      },
+      {
+        "name": "knowledgearticleincidents",
+        "kind": "EntitySet",
+        "url": "knowledgearticleincidents"
+      },
+      {
+        "name": "knowledgearticles",
+        "kind": "EntitySet",
+        "url": "knowledgearticles"
+      },
+      {
+        "name": "knowledgearticleviews",
+        "kind": "EntitySet",
+        "url": "knowledgearticleviews"
+      },
+      {
+        "name": "knowledgebaserecords",
+        "kind": "EntitySet",
+        "url": "knowledgebaserecords"
+      },
+      {
+        "name": "languagelocale",
+        "kind": "EntitySet",
+        "url": "languagelocale"
+      },
+      {
+        "name": "languageprovisioningstates",
+        "kind": "EntitySet",
+        "url": "languageprovisioningstates"
+      },
+      {
+        "name": "leadaddresses",
+        "kind": "EntitySet",
+        "url": "leadaddresses"
+      },
+      {
+        "name": "leadcompetitorscollection",
+        "kind": "EntitySet",
+        "url": "leadcompetitorscollection"
+      },
+      {
+        "name": "leadproducts",
+        "kind": "EntitySet",
+        "url": "leadproducts"
+      },
+      {
+        "name": "leads",
+        "kind": "EntitySet",
+        "url": "leads"
+      },
+      {
+        "name": "leadtoopportunitysalesprocesses",
+        "kind": "EntitySet",
+        "url": "leadtoopportunitysalesprocesses"
+      },
+      {
+        "name": "letters",
+        "kind": "EntitySet",
+        "url": "letters"
+      },
+      {
+        "name": "listmembers",
+        "kind": "EntitySet",
+        "url": "listmembers"
+      },
+      {
+        "name": "listoperations",
+        "kind": "EntitySet",
+        "url": "listoperations"
+      },
+      {
+        "name": "lists",
+        "kind": "EntitySet",
+        "url": "lists"
+      },
+      {
+        "name": "lookupmappings",
+        "kind": "EntitySet",
+        "url": "lookupmappings"
+      },
+      {
+        "name": "mailboxes",
+        "kind": "EntitySet",
+        "url": "mailboxes"
+      },
+      {
+        "name": "mailboxtrackingfolders",
+        "kind": "EntitySet",
+        "url": "mailboxtrackingfolders"
+      },
+      {
+        "name": "mailmergetemplates",
+        "kind": "EntitySet",
+        "url": "mailmergetemplates"
+      },
+      {
+        "name": "managedidentities",
+        "kind": "EntitySet",
+        "url": "managedidentities"
+      },
+      {
+        "name": "managedproperties",
+        "kind": "EntitySet",
+        "url": "managedproperties"
+      },
+      {
+        "name": "marketingformdisplayattributesset",
+        "kind": "EntitySet",
+        "url": "marketingformdisplayattributesset"
+      },
+      {
+        "name": "metrics",
+        "kind": "EntitySet",
+        "url": "metrics"
+      },
+      {
+        "name": "mobileofflineprofileitemassociations",
+        "kind": "EntitySet",
+        "url": "mobileofflineprofileitemassociations"
+      },
+      {
+        "name": "mobileofflineprofileitems",
+        "kind": "EntitySet",
+        "url": "mobileofflineprofileitems"
+      },
+      {
+        "name": "mobileofflineprofiles",
+        "kind": "EntitySet",
+        "url": "mobileofflineprofiles"
+      },
+      {
+        "name": "monthlyfiscalcalendars",
+        "kind": "EntitySet",
+        "url": "monthlyfiscalcalendars"
+      },
+      {
+        "name": "msdyn_actioncardregardings",
+        "kind": "EntitySet",
+        "url": "msdyn_actioncardregardings"
+      },
+      {
+        "name": "msdyn_actioncardrolesettings",
+        "kind": "EntitySet",
+        "url": "msdyn_actioncardrolesettings"
+      },
+      {
+        "name": "msdyn_adaptivecardconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_adaptivecardconfigurations"
+      },
+      {
+        "name": "msdyn_aibdatasetfiles",
+        "kind": "EntitySet",
+        "url": "msdyn_aibdatasetfiles"
+      },
+      {
+        "name": "msdyn_aibdatasetrecords",
+        "kind": "EntitySet",
+        "url": "msdyn_aibdatasetrecords"
+      },
+      {
+        "name": "msdyn_aibdatasets",
+        "kind": "EntitySet",
+        "url": "msdyn_aibdatasets"
+      },
+      {
+        "name": "msdyn_aibdatasetscontainers",
+        "kind": "EntitySet",
+        "url": "msdyn_aibdatasetscontainers"
+      },
+      {
+        "name": "msdyn_aibfileattacheddatas",
+        "kind": "EntitySet",
+        "url": "msdyn_aibfileattacheddatas"
+      },
+      {
+        "name": "msdyn_aibfiles",
+        "kind": "EntitySet",
+        "url": "msdyn_aibfiles"
+      },
+      {
+        "name": "msdyn_aiconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_aiconfigurations"
+      },
+      {
+        "name": "msdyn_aifptrainingdocuments",
+        "kind": "EntitySet",
+        "url": "msdyn_aifptrainingdocuments"
+      },
+      {
+        "name": "msdyn_aimodels",
+        "kind": "EntitySet",
+        "url": "msdyn_aimodels"
+      },
+      {
+        "name": "msdyn_aiodimages",
+        "kind": "EntitySet",
+        "url": "msdyn_aiodimages"
+      },
+      {
+        "name": "msdyn_aiodlabel_msdyn_aiconfigurationset",
+        "kind": "EntitySet",
+        "url": "msdyn_aiodlabel_msdyn_aiconfigurationset"
+      },
+      {
+        "name": "msdyn_aiodlabels",
+        "kind": "EntitySet",
+        "url": "msdyn_aiodlabels"
+      },
+      {
+        "name": "msdyn_aiodtrainingboundingboxes",
+        "kind": "EntitySet",
+        "url": "msdyn_aiodtrainingboundingboxes"
+      },
+      {
+        "name": "msdyn_aiodtrainingimages",
+        "kind": "EntitySet",
+        "url": "msdyn_aiodtrainingimages"
+      },
+      {
+        "name": "msdyn_aitemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_aitemplates"
+      },
+      {
+        "name": "msdyn_analysiscomponents",
+        "kind": "EntitySet",
+        "url": "msdyn_analysiscomponents"
+      },
+      {
+        "name": "msdyn_analysisjobs",
+        "kind": "EntitySet",
+        "url": "msdyn_analysisjobs"
+      },
+      {
+        "name": "msdyn_analysisresultdetails",
+        "kind": "EntitySet",
+        "url": "msdyn_analysisresultdetails"
+      },
+      {
+        "name": "msdyn_analysisresults",
+        "kind": "EntitySet",
+        "url": "msdyn_analysisresults"
+      },
+      {
+        "name": "msdyn_analyticsadminsettings",
+        "kind": "EntitySet",
+        "url": "msdyn_analyticsadminsettings"
+      },
+      {
+        "name": "msdyn_analyticsforcs",
+        "kind": "EntitySet",
+        "url": "msdyn_analyticsforcs"
+      },
+      {
+        "name": "msdyn_appconfig_msdyn_channelproviderset",
+        "kind": "EntitySet",
+        "url": "msdyn_appconfig_msdyn_channelproviderset"
+      },
+      {
+        "name": "msdyn_appconfiguration_applicationextensionset",
+        "kind": "EntitySet",
+        "url": "msdyn_appconfiguration_applicationextensionset"
+      },
+      {
+        "name": "msdyn_appconfiguration_sessiontemplateset",
+        "kind": "EntitySet",
+        "url": "msdyn_appconfiguration_sessiontemplateset"
+      },
+      {
+        "name": "msdyn_appconfiguration_systemuserset",
+        "kind": "EntitySet",
+        "url": "msdyn_appconfiguration_systemuserset"
+      },
+      {
+        "name": "msdyn_appconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_appconfigurations"
+      },
+      {
+        "name": "msdyn_applicationextensions",
+        "kind": "EntitySet",
+        "url": "msdyn_applicationextensions"
+      },
+      {
+        "name": "msdyn_applicationtabtemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_applicationtabtemplates"
+      },
+      {
+        "name": "msdyn_assetcategorytemplateassociations",
+        "kind": "EntitySet",
+        "url": "msdyn_assetcategorytemplateassociations"
+      },
+      {
+        "name": "msdyn_assettemplateassociations",
+        "kind": "EntitySet",
+        "url": "msdyn_assettemplateassociations"
+      },
+      {
+        "name": "msdyn_autocapturerules",
+        "kind": "EntitySet",
+        "url": "msdyn_autocapturerules"
+      },
+      {
+        "name": "msdyn_autocapturesettingses",
+        "kind": "EntitySet",
+        "url": "msdyn_autocapturesettingses"
+      },
+      {
+        "name": "msdyn_callablecontext_msdyn_playbooktemplateset",
+        "kind": "EntitySet",
+        "url": "msdyn_callablecontext_msdyn_playbooktemplateset"
+      },
+      {
+        "name": "msdyn_callablecontexts",
+        "kind": "EntitySet",
+        "url": "msdyn_callablecontexts"
+      },
+      {
+        "name": "msdyn_caseenrichments",
+        "kind": "EntitySet",
+        "url": "msdyn_caseenrichments"
+      },
+      {
+        "name": "msdyn_casesuggestionrequestpayloads",
+        "kind": "EntitySet",
+        "url": "msdyn_casesuggestionrequestpayloads"
+      },
+      {
+        "name": "msdyn_casesuggestions",
+        "kind": "EntitySet",
+        "url": "msdyn_casesuggestions"
+      },
+      {
+        "name": "msdyn_casesuggestionsdatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_casesuggestionsdatasources"
+      },
+      {
+        "name": "msdyn_casetopic_incidents",
+        "kind": "EntitySet",
+        "url": "msdyn_casetopic_incidents"
+      },
+      {
+        "name": "msdyn_casetopics",
+        "kind": "EntitySet",
+        "url": "msdyn_casetopics"
+      },
+      {
+        "name": "msdyn_casetopicsettings",
+        "kind": "EntitySet",
+        "url": "msdyn_casetopicsettings"
+      },
+      {
+        "name": "msdyn_casetopicsummaries",
+        "kind": "EntitySet",
+        "url": "msdyn_casetopicsummaries"
+      },
+      {
+        "name": "msdyn_channelproviders",
+        "kind": "EntitySet",
+        "url": "msdyn_channelproviders"
+      },
+      {
+        "name": "msdyn_collabgraphresource",
+        "kind": "EntitySet",
+        "url": "msdyn_collabgraphresource"
+      },
+      {
+        "name": "msdyn_componentlayerdatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_componentlayerdatasources"
+      },
+      {
+        "name": "msdyn_componentlayers",
+        "kind": "EntitySet",
+        "url": "msdyn_componentlayers"
+      },
+      {
+        "name": "msdyn_conversationsdata",
+        "kind": "EntitySet",
+        "url": "msdyn_conversationsdata"
+      },
+      {
+        "name": "msdyn_customerassetattachments",
+        "kind": "EntitySet",
+        "url": "msdyn_customerassetattachments"
+      },
+      {
+        "name": "msdyn_customerassetcategories",
+        "kind": "EntitySet",
+        "url": "msdyn_customerassetcategories"
+      },
+      {
+        "name": "msdyn_customerassets",
+        "kind": "EntitySet",
+        "url": "msdyn_customerassets"
+      },
+      {
+        "name": "msdyn_dataanalyticsreports",
+        "kind": "EntitySet",
+        "url": "msdyn_dataanalyticsreports"
+      },
+      {
+        "name": "msdyn_dataanalyticsreports_csrmanager",
+        "kind": "EntitySet",
+        "url": "msdyn_dataanalyticsreports_csrmanager"
+      },
+      {
+        "name": "msdyn_dataanalyticsreports_ksinsights",
+        "kind": "EntitySet",
+        "url": "msdyn_dataanalyticsreports_ksinsights"
+      },
+      {
+        "name": "msdyn_databaseversions",
+        "kind": "EntitySet",
+        "url": "msdyn_databaseversions"
+      },
+      {
+        "name": "msdyn_dataflows",
+        "kind": "EntitySet",
+        "url": "msdyn_dataflows"
+      },
+      {
+        "name": "msdyn_datainsightsandanalyticsfeatures",
+        "kind": "EntitySet",
+        "url": "msdyn_datainsightsandanalyticsfeatures"
+      },
+      {
+        "name": "msdyn_dealmanageraccesses",
+        "kind": "EntitySet",
+        "url": "msdyn_dealmanageraccesses"
+      },
+      {
+        "name": "msdyn_dealmanagersettings",
+        "kind": "EntitySet",
+        "url": "msdyn_dealmanagersettings"
+      },
+      {
+        "name": "msdyn_entityrankingrules",
+        "kind": "EntitySet",
+        "url": "msdyn_entityrankingrules"
+      },
+      {
+        "name": "msdyn_federatedarticleincidents",
+        "kind": "EntitySet",
+        "url": "msdyn_federatedarticleincidents"
+      },
+      {
+        "name": "msdyn_federatedarticles",
+        "kind": "EntitySet",
+        "url": "msdyn_federatedarticles"
+      },
+      {
+        "name": "msdyn_flowcardtypes",
+        "kind": "EntitySet",
+        "url": "msdyn_flowcardtypes"
+      },
+      {
+        "name": "msdyn_forecastconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_forecastconfigurations"
+      },
+      {
+        "name": "msdyn_forecastdefinitions",
+        "kind": "EntitySet",
+        "url": "msdyn_forecastdefinitions"
+      },
+      {
+        "name": "msdyn_forecastinstances",
+        "kind": "EntitySet",
+        "url": "msdyn_forecastinstances"
+      },
+      {
+        "name": "msdyn_forecastrecurrences",
+        "kind": "EntitySet",
+        "url": "msdyn_forecastrecurrences"
+      },
+      {
+        "name": "msdyn_functionallocations",
+        "kind": "EntitySet",
+        "url": "msdyn_functionallocations"
+      },
+      {
+        "name": "msdyn_gdprdataset",
+        "kind": "EntitySet",
+        "url": "msdyn_gdprdataset"
+      },
+      {
+        "name": "msdyn_helppages",
+        "kind": "EntitySet",
+        "url": "msdyn_helppages"
+      },
+      {
+        "name": "msdyn_icebreakersconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_icebreakersconfigs"
+      },
+      {
+        "name": "msdyn_incident_msdyn_customerassetset",
+        "kind": "EntitySet",
+        "url": "msdyn_incident_msdyn_customerassetset"
+      },
+      {
+        "name": "msdyn_iotalerts",
+        "kind": "EntitySet",
+        "url": "msdyn_iotalerts"
+      },
+      {
+        "name": "msdyn_iotdevicecategories",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicecategories"
+      },
+      {
+        "name": "msdyn_iotdevicecategorycommandsset",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicecategorycommandsset"
+      },
+      {
+        "name": "msdyn_iotdevicecommanddefinitions",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicecommanddefinitions"
+      },
+      {
+        "name": "msdyn_iotdevicecommandparametersset",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicecommandparametersset"
+      },
+      {
+        "name": "msdyn_iotdevicecommands",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicecommands"
+      },
+      {
+        "name": "msdyn_iotdevicedatahistory",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicedatahistory"
+      },
+      {
+        "name": "msdyn_iotdeviceproperties",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdeviceproperties"
+      },
+      {
+        "name": "msdyn_iotdeviceregistrationhistories",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdeviceregistrationhistories"
+      },
+      {
+        "name": "msdyn_iotdevices",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevices"
+      },
+      {
+        "name": "msdyn_iotdevicevisualizationconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_iotdevicevisualizationconfigurations"
+      },
+      {
+        "name": "msdyn_iotfieldmappings",
+        "kind": "EntitySet",
+        "url": "msdyn_iotfieldmappings"
+      },
+      {
+        "name": "msdyn_iotpropertydefinitions",
+        "kind": "EntitySet",
+        "url": "msdyn_iotpropertydefinitions"
+      },
+      {
+        "name": "msdyn_iotproviderinstances",
+        "kind": "EntitySet",
+        "url": "msdyn_iotproviderinstances"
+      },
+      {
+        "name": "msdyn_iotproviders",
+        "kind": "EntitySet",
+        "url": "msdyn_iotproviders"
+      },
+      {
+        "name": "msdyn_iotsettingses",
+        "kind": "EntitySet",
+        "url": "msdyn_iotsettingses"
+      },
+      {
+        "name": "msdyn_iottocaseprocesses",
+        "kind": "EntitySet",
+        "url": "msdyn_iottocaseprocesses"
+      },
+      {
+        "name": "msdyn_kalanguagesettings",
+        "kind": "EntitySet",
+        "url": "msdyn_kalanguagesettings"
+      },
+      {
+        "name": "msdyn_kbenrichments",
+        "kind": "EntitySet",
+        "url": "msdyn_kbenrichments"
+      },
+      {
+        "name": "msdyn_kmfederatedsearchconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_kmfederatedsearchconfigs"
+      },
+      {
+        "name": "msdyn_kmpersonalizationsettings",
+        "kind": "EntitySet",
+        "url": "msdyn_kmpersonalizationsettings"
+      },
+      {
+        "name": "msdyn_knowledgearticleimages",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgearticleimages"
+      },
+      {
+        "name": "msdyn_knowledgearticlesuggestiondatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgearticlesuggestiondatasources"
+      },
+      {
+        "name": "msdyn_knowledgearticlesuggestions",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgearticlesuggestions"
+      },
+      {
+        "name": "msdyn_knowledgearticletemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgearticletemplates"
+      },
+      {
+        "name": "msdyn_knowledgeinteractioninsights",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgeinteractioninsights"
+      },
+      {
+        "name": "msdyn_knowledgepersonalfilters",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgepersonalfilters"
+      },
+      {
+        "name": "msdyn_knowledgesearchfilters",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgesearchfilters"
+      },
+      {
+        "name": "msdyn_knowledgesearchinsights",
+        "kind": "EntitySet",
+        "url": "msdyn_knowledgesearchinsights"
+      },
+      {
+        "name": "msdyn_kpieventdefinitions",
+        "kind": "EntitySet",
+        "url": "msdyn_kpieventdefinitions"
+      },
+      {
+        "name": "msdyn_kpieventsdata",
+        "kind": "EntitySet",
+        "url": "msdyn_kpieventsdata"
+      },
+      {
+        "name": "msdyn_macrosessions",
+        "kind": "EntitySet",
+        "url": "msdyn_macrosessions"
+      },
+      {
+        "name": "msdyn_migrationtrackers",
+        "kind": "EntitySet",
+        "url": "msdyn_migrationtrackers"
+      },
+      {
+        "name": "msdyn_msdyn_functionallocation_accountset",
+        "kind": "EntitySet",
+        "url": "msdyn_msdyn_functionallocation_accountset"
+      },
+      {
+        "name": "msdyn_msdyn_paneconfig_msdyn_appconfigset",
+        "kind": "EntitySet",
+        "url": "msdyn_msdyn_paneconfig_msdyn_appconfigset"
+      },
+      {
+        "name": "msdyn_msdyn_prod_actioninputparameter_msdyn_parset",
+        "kind": "EntitySet",
+        "url": "msdyn_msdyn_prod_actioninputparameter_msdyn_parset"
+      },
+      {
+        "name": "msdyn_msdyn_prod_actionoutputparameter_msdyn_paset",
+        "kind": "EntitySet",
+        "url": "msdyn_msdyn_prod_actionoutputparameter_msdyn_paset"
+      },
+      {
+        "name": "msdyn_msdyn_prod_agentscript_msdyn_sessiontemplset",
+        "kind": "EntitySet",
+        "url": "msdyn_msdyn_prod_agentscript_msdyn_sessiontemplset"
+      },
+      {
+        "name": "msdyn_msteamssettings",
+        "kind": "EntitySet",
+        "url": "msdyn_msteamssettings"
+      },
+      {
+        "name": "msdyn_msteamssettingsv2",
+        "kind": "EntitySet",
+        "url": "msdyn_msteamssettingsv2"
+      },
+      {
+        "name": "msdyn_nonrelationaldses",
+        "kind": "EntitySet",
+        "url": "msdyn_nonrelationaldses"
+      },
+      {
+        "name": "msdyn_notesanalysisconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_notesanalysisconfigs"
+      },
+      {
+        "name": "msdyn_notificationfields",
+        "kind": "EntitySet",
+        "url": "msdyn_notificationfields"
+      },
+      {
+        "name": "msdyn_notificationtemplate_notificationfieldset",
+        "kind": "EntitySet",
+        "url": "msdyn_notificationtemplate_notificationfieldset"
+      },
+      {
+        "name": "msdyn_notificationtemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_notificationtemplates"
+      },
+      {
+        "name": "msdyn_odatav4ds",
+        "kind": "EntitySet",
+        "url": "msdyn_odatav4ds"
+      },
+      {
+        "name": "msdyn_paneconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_paneconfigurations"
+      },
+      {
+        "name": "msdyn_panetabconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_panetabconfigurations"
+      },
+      {
+        "name": "msdyn_panetoolconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_panetoolconfigurations"
+      },
+      {
+        "name": "msdyn_playbookactivities",
+        "kind": "EntitySet",
+        "url": "msdyn_playbookactivities"
+      },
+      {
+        "name": "msdyn_playbookactivityattributes",
+        "kind": "EntitySet",
+        "url": "msdyn_playbookactivityattributes"
+      },
+      {
+        "name": "msdyn_playbookcategories",
+        "kind": "EntitySet",
+        "url": "msdyn_playbookcategories"
+      },
+      {
+        "name": "msdyn_playbookinstances",
+        "kind": "EntitySet",
+        "url": "msdyn_playbookinstances"
+      },
+      {
+        "name": "msdyn_playbooktemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_playbooktemplates"
+      },
+      {
+        "name": "msdyn_pminferredtasks",
+        "kind": "EntitySet",
+        "url": "msdyn_pminferredtasks"
+      },
+      {
+        "name": "msdyn_pmrecordings",
+        "kind": "EntitySet",
+        "url": "msdyn_pmrecordings"
+      },
+      {
+        "name": "msdyn_postalbums",
+        "kind": "EntitySet",
+        "url": "msdyn_postalbums"
+      },
+      {
+        "name": "msdyn_postconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_postconfigs"
+      },
+      {
+        "name": "msdyn_postruleconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_postruleconfigs"
+      },
+      {
+        "name": "msdyn_productivityactioninputparameters",
+        "kind": "EntitySet",
+        "url": "msdyn_productivityactioninputparameters"
+      },
+      {
+        "name": "msdyn_productivityactionoutputparameters",
+        "kind": "EntitySet",
+        "url": "msdyn_productivityactionoutputparameters"
+      },
+      {
+        "name": "msdyn_productivityagentscripts",
+        "kind": "EntitySet",
+        "url": "msdyn_productivityagentscripts"
+      },
+      {
+        "name": "msdyn_productivityagentscriptsteps",
+        "kind": "EntitySet",
+        "url": "msdyn_productivityagentscriptsteps"
+      },
+      {
+        "name": "msdyn_productivitymacroactiontemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_productivitymacroactiontemplates"
+      },
+      {
+        "name": "msdyn_productivitymacroconnectors",
+        "kind": "EntitySet",
+        "url": "msdyn_productivitymacroconnectors"
+      },
+      {
+        "name": "msdyn_productivitymacrosolutionconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_productivitymacrosolutionconfigurations"
+      },
+      {
+        "name": "msdyn_productivityparameterdefinitions",
+        "kind": "EntitySet",
+        "url": "msdyn_productivityparameterdefinitions"
+      },
+      {
+        "name": "msdyn_properties",
+        "kind": "EntitySet",
+        "url": "msdyn_properties"
+      },
+      {
+        "name": "msdyn_propertyassetassociations",
+        "kind": "EntitySet",
+        "url": "msdyn_propertyassetassociations"
+      },
+      {
+        "name": "msdyn_propertylogs",
+        "kind": "EntitySet",
+        "url": "msdyn_propertylogs"
+      },
+      {
+        "name": "msdyn_propertytemplateassociations",
+        "kind": "EntitySet",
+        "url": "msdyn_propertytemplateassociations"
+      },
+      {
+        "name": "msdyn_relationshipinsightsunifiedconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_relationshipinsightsunifiedconfigs"
+      },
+      {
+        "name": "msdyn_richtextfiles",
+        "kind": "EntitySet",
+        "url": "msdyn_richtextfiles"
+      },
+      {
+        "name": "msdyn_salesinsightssettings",
+        "kind": "EntitySet",
+        "url": "msdyn_salesinsightssettings"
+      },
+      {
+        "name": "msdyn_serviceconfigurations",
+        "kind": "EntitySet",
+        "url": "msdyn_serviceconfigurations"
+      },
+      {
+        "name": "msdyn_sessionparticipantsdata",
+        "kind": "EntitySet",
+        "url": "msdyn_sessionparticipantsdata"
+      },
+      {
+        "name": "msdyn_sessionsdata",
+        "kind": "EntitySet",
+        "url": "msdyn_sessionsdata"
+      },
+      {
+        "name": "msdyn_sessiontemplate_applicationtabset",
+        "kind": "EntitySet",
+        "url": "msdyn_sessiontemplate_applicationtabset"
+      },
+      {
+        "name": "msdyn_sessiontemplates",
+        "kind": "EntitySet",
+        "url": "msdyn_sessiontemplates"
+      },
+      {
+        "name": "msdyn_siconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_siconfigs"
+      },
+      {
+        "name": "msdyn_sikeyvalueconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_sikeyvalueconfigs"
+      },
+      {
+        "name": "msdyn_slakpis",
+        "kind": "EntitySet",
+        "url": "msdyn_slakpis"
+      },
+      {
+        "name": "msdyn_smartassistconfig_msdyn_appconfigset",
+        "kind": "EntitySet",
+        "url": "msdyn_smartassistconfig_msdyn_appconfigset"
+      },
+      {
+        "name": "msdyn_smartassistconfigs",
+        "kind": "EntitySet",
+        "url": "msdyn_smartassistconfigs"
+      },
+      {
+        "name": "msdyn_solutioncomponentdatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_solutioncomponentdatasources"
+      },
+      {
+        "name": "msdyn_solutioncomponentsummaries",
+        "kind": "EntitySet",
+        "url": "msdyn_solutioncomponentsummaries"
+      },
+      {
+        "name": "msdyn_solutionhealthrulearguments",
+        "kind": "EntitySet",
+        "url": "msdyn_solutionhealthrulearguments"
+      },
+      {
+        "name": "msdyn_solutionhealthrules",
+        "kind": "EntitySet",
+        "url": "msdyn_solutionhealthrules"
+      },
+      {
+        "name": "msdyn_solutionhealthrulesets",
+        "kind": "EntitySet",
+        "url": "msdyn_solutionhealthrulesets"
+      },
+      {
+        "name": "msdyn_solutionhistories",
+        "kind": "EntitySet",
+        "url": "msdyn_solutionhistories"
+      },
+      {
+        "name": "msdyn_solutionhistorydatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_solutionhistorydatasources"
+      },
+      {
+        "name": "msdyn_suggestedactivities",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestedactivities"
+      },
+      {
+        "name": "msdyn_suggestedactivitydatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestedactivitydatasources"
+      },
+      {
+        "name": "msdyn_suggestedcontacts",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestedcontacts"
+      },
+      {
+        "name": "msdyn_suggestedcontactsdatasources",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestedcontactsdatasources"
+      },
+      {
+        "name": "msdyn_suggestioninteractions",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestioninteractions"
+      },
+      {
+        "name": "msdyn_suggestionrequestpayloads",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestionrequestpayloads"
+      },
+      {
+        "name": "msdyn_suggestionsmodelsummaries",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestionsmodelsummaries"
+      },
+      {
+        "name": "msdyn_suggestionssettings",
+        "kind": "EntitySet",
+        "url": "msdyn_suggestionssettings"
+      },
+      {
+        "name": "msdyn_teamschatassociations",
+        "kind": "EntitySet",
+        "url": "msdyn_teamschatassociations"
+      },
+      {
+        "name": "msdyn_teamschatsuggestions",
+        "kind": "EntitySet",
+        "url": "msdyn_teamschatsuggestions"
+      },
+      {
+        "name": "msdyn_teamscollaborations",
+        "kind": "EntitySet",
+        "url": "msdyn_teamscollaborations"
+      },
+      {
+        "name": "msdyn_teamsdialeradminsettingset",
+        "kind": "EntitySet",
+        "url": "msdyn_teamsdialeradminsettingset"
+      },
+      {
+        "name": "msdyn_templateforpropertieses",
+        "kind": "EntitySet",
+        "url": "msdyn_templateforpropertieses"
+      },
+      {
+        "name": "msdyn_templateparameters",
+        "kind": "EntitySet",
+        "url": "msdyn_templateparameters"
+      },
+      {
+        "name": "msdyn_tours",
+        "kind": "EntitySet",
+        "url": "msdyn_tours"
+      },
+      {
+        "name": "msdyn_unifiedroutingsetuptrackers",
+        "kind": "EntitySet",
+        "url": "msdyn_unifiedroutingsetuptrackers"
+      },
+      {
+        "name": "msdyn_untrackedappointments",
+        "kind": "EntitySet",
+        "url": "msdyn_untrackedappointments"
+      },
+      {
+        "name": "msdyn_upgraderuns",
+        "kind": "EntitySet",
+        "url": "msdyn_upgraderuns"
+      },
+      {
+        "name": "msdyn_upgradesteps",
+        "kind": "EntitySet",
+        "url": "msdyn_upgradesteps"
+      },
+      {
+        "name": "msdyn_upgradeversions",
+        "kind": "EntitySet",
+        "url": "msdyn_upgradeversions"
+      },
+      {
+        "name": "msdyn_wallsavedqueries",
+        "kind": "EntitySet",
+        "url": "msdyn_wallsavedqueries"
+      },
+      {
+        "name": "msdyn_wallsavedqueryusersettingses",
+        "kind": "EntitySet",
+        "url": "msdyn_wallsavedqueryusersettingses"
+      },
+      {
+        "name": "msdynce_botcontents",
+        "kind": "EntitySet",
+        "url": "msdynce_botcontents"
+      },
+      {
+        "name": "msfp_alertrules",
+        "kind": "EntitySet",
+        "url": "msfp_alertrules"
+      },
+      {
+        "name": "msfp_alerts",
+        "kind": "EntitySet",
+        "url": "msfp_alerts"
+      },
+      {
+        "name": "msfp_emailtemplates",
+        "kind": "EntitySet",
+        "url": "msfp_emailtemplates"
+      },
+      {
+        "name": "msfp_fileresponses",
+        "kind": "EntitySet",
+        "url": "msfp_fileresponses"
+      },
+      {
+        "name": "msfp_localizedemailtemplates",
+        "kind": "EntitySet",
+        "url": "msfp_localizedemailtemplates"
+      },
+      {
+        "name": "msfp_projects",
+        "kind": "EntitySet",
+        "url": "msfp_projects"
+      },
+      {
+        "name": "msfp_questionresponses",
+        "kind": "EntitySet",
+        "url": "msfp_questionresponses"
+      },
+      {
+        "name": "msfp_questions",
+        "kind": "EntitySet",
+        "url": "msfp_questions"
+      },
+      {
+        "name": "msfp_satisfactionmetrics",
+        "kind": "EntitySet",
+        "url": "msfp_satisfactionmetrics"
+      },
+      {
+        "name": "msfp_surveies",
+        "kind": "EntitySet",
+        "url": "msfp_surveies"
+      },
+      {
+        "name": "msfp_surveyinvites",
+        "kind": "EntitySet",
+        "url": "msfp_surveyinvites"
+      },
+      {
+        "name": "msfp_surveyreminders",
+        "kind": "EntitySet",
+        "url": "msfp_surveyreminders"
+      },
+      {
+        "name": "msfp_surveyresponses",
+        "kind": "EntitySet",
+        "url": "msfp_surveyresponses"
+      },
+      {
+        "name": "msfp_unsubscribedrecipients",
+        "kind": "EntitySet",
+        "url": "msfp_unsubscribedrecipients"
+      },
+      {
+        "name": "navigationsettings",
+        "kind": "EntitySet",
+        "url": "navigationsettings"
+      },
+      {
+        "name": "new_admin_settings_entities",
+        "kind": "EntitySet",
+        "url": "new_admin_settings_entities"
+      },
+      {
+        "name": "newprocesses",
+        "kind": "EntitySet",
+        "url": "newprocesses"
+      },
+      {
+        "name": "officegraphdocuments",
+        "kind": "EntitySet",
+        "url": "officegraphdocuments"
+      },
+      {
+        "name": "opportunities",
+        "kind": "EntitySet",
+        "url": "opportunities"
+      },
+      {
+        "name": "opportunitycloses",
+        "kind": "EntitySet",
+        "url": "opportunitycloses"
+      },
+      {
+        "name": "opportunitycompetitorscollection",
+        "kind": "EntitySet",
+        "url": "opportunitycompetitorscollection"
+      },
+      {
+        "name": "opportunityproducts",
+        "kind": "EntitySet",
+        "url": "opportunityproducts"
+      },
+      {
+        "name": "opportunitysalesprocesses",
+        "kind": "EntitySet",
+        "url": "opportunitysalesprocesses"
+      },
+      {
+        "name": "optionsets",
+        "kind": "EntitySet",
+        "url": "optionsets"
+      },
+      {
+        "name": "ordercloses",
+        "kind": "EntitySet",
+        "url": "ordercloses"
+      },
+      {
+        "name": "organizationdatasyncsubscriptionentities",
+        "kind": "EntitySet",
+        "url": "organizationdatasyncsubscriptionentities"
+      },
+      {
+        "name": "organizationdatasyncsubscriptions",
+        "kind": "EntitySet",
+        "url": "organizationdatasyncsubscriptions"
+      },
+      {
+        "name": "organizations",
+        "kind": "EntitySet",
+        "url": "organizations"
+      },
+      {
+        "name": "ownermappings",
+        "kind": "EntitySet",
+        "url": "ownermappings"
+      },
+      {
+        "name": "package_solutionset",
+        "kind": "EntitySet",
+        "url": "package_solutionset"
+      },
+      {
+        "name": "packages",
+        "kind": "EntitySet",
+        "url": "packages"
+      },
+      {
+        "name": "personaldocumenttemplates",
+        "kind": "EntitySet",
+        "url": "personaldocumenttemplates"
+      },
+      {
+        "name": "phonecalls",
+        "kind": "EntitySet",
+        "url": "phonecalls"
+      },
+      {
+        "name": "phonetocaseprocesses",
+        "kind": "EntitySet",
+        "url": "phonetocaseprocesses"
+      },
+      {
+        "name": "picklistmappings",
+        "kind": "EntitySet",
+        "url": "picklistmappings"
+      },
+      {
+        "name": "pluginassemblies",
+        "kind": "EntitySet",
+        "url": "pluginassemblies"
+      },
+      {
+        "name": "pluginpackages",
+        "kind": "EntitySet",
+        "url": "pluginpackages"
+      },
+      {
+        "name": "plugintracelogs",
+        "kind": "EntitySet",
+        "url": "plugintracelogs"
+      },
+      {
+        "name": "plugintypes",
+        "kind": "EntitySet",
+        "url": "plugintypes"
+      },
+      {
+        "name": "plugintypestatistics",
+        "kind": "EntitySet",
+        "url": "plugintypestatistics"
+      },
+      {
+        "name": "positions",
+        "kind": "EntitySet",
+        "url": "positions"
+      },
+      {
+        "name": "postcomments",
+        "kind": "EntitySet",
+        "url": "postcomments"
+      },
+      {
+        "name": "postfollows",
+        "kind": "EntitySet",
+        "url": "postfollows"
+      },
+      {
+        "name": "postlikes",
+        "kind": "EntitySet",
+        "url": "postlikes"
+      },
+      {
+        "name": "postregardings",
+        "kind": "EntitySet",
+        "url": "postregardings"
+      },
+      {
+        "name": "posts",
+        "kind": "EntitySet",
+        "url": "posts"
+      },
+      {
+        "name": "pricelevels",
+        "kind": "EntitySet",
+        "url": "pricelevels"
+      },
+      {
+        "name": "principalentitybusinessunitmaps",
+        "kind": "EntitySet",
+        "url": "principalentitybusinessunitmaps"
+      },
+      {
+        "name": "principalentitymaps",
+        "kind": "EntitySet",
+        "url": "principalentitymaps"
+      },
+      {
+        "name": "principalobjectaccessset",
+        "kind": "EntitySet",
+        "url": "principalobjectaccessset"
+      },
+      {
+        "name": "principalobjectattributeaccessset",
+        "kind": "EntitySet",
+        "url": "principalobjectattributeaccessset"
+      },
+      {
+        "name": "privileges",
+        "kind": "EntitySet",
+        "url": "privileges"
+      },
+      {
+        "name": "processsessions",
+        "kind": "EntitySet",
+        "url": "processsessions"
+      },
+      {
+        "name": "processstageparameters",
+        "kind": "EntitySet",
+        "url": "processstageparameters"
+      },
+      {
+        "name": "processstages",
+        "kind": "EntitySet",
+        "url": "processstages"
+      },
+      {
+        "name": "processtriggers",
+        "kind": "EntitySet",
+        "url": "processtriggers"
+      },
+      {
+        "name": "productassociations",
+        "kind": "EntitySet",
+        "url": "productassociations"
+      },
+      {
+        "name": "productpricelevels",
+        "kind": "EntitySet",
+        "url": "productpricelevels"
+      },
+      {
+        "name": "products",
+        "kind": "EntitySet",
+        "url": "products"
+      },
+      {
+        "name": "productsalesliteratures",
+        "kind": "EntitySet",
+        "url": "productsalesliteratures"
+      },
+      {
+        "name": "productsubstitutes",
+        "kind": "EntitySet",
+        "url": "productsubstitutes"
+      },
+      {
+        "name": "provisionlanguageforusers",
+        "kind": "EntitySet",
+        "url": "provisionlanguageforusers"
+      },
+      {
+        "name": "publisheraddresses",
+        "kind": "EntitySet",
+        "url": "publisheraddresses"
+      },
+      {
+        "name": "publishers",
+        "kind": "EntitySet",
+        "url": "publishers"
+      },
+      {
+        "name": "quarterlyfiscalcalendars",
+        "kind": "EntitySet",
+        "url": "quarterlyfiscalcalendars"
+      },
+      {
+        "name": "queueitems",
+        "kind": "EntitySet",
+        "url": "queueitems"
+      },
+      {
+        "name": "queuememberships",
+        "kind": "EntitySet",
+        "url": "queuememberships"
+      },
+      {
+        "name": "queues",
+        "kind": "EntitySet",
+        "url": "queues"
+      },
+      {
+        "name": "quotecloses",
+        "kind": "EntitySet",
+        "url": "quotecloses"
+      },
+      {
+        "name": "quotedetails",
+        "kind": "EntitySet",
+        "url": "quotedetails"
+      },
+      {
+        "name": "quotes",
+        "kind": "EntitySet",
+        "url": "quotes"
+      },
+      {
+        "name": "ratingmodels",
+        "kind": "EntitySet",
+        "url": "ratingmodels"
+      },
+      {
+        "name": "ratingvalues",
+        "kind": "EntitySet",
+        "url": "ratingvalues"
+      },
+      {
+        "name": "recommendeddocuments",
+        "kind": "EntitySet",
+        "url": "recommendeddocuments"
+      },
+      {
+        "name": "recurrencerules",
+        "kind": "EntitySet",
+        "url": "recurrencerules"
+      },
+      {
+        "name": "recurringappointmentmasters",
+        "kind": "EntitySet",
+        "url": "recurringappointmentmasters"
+      },
+      {
+        "name": "relationshipattributes",
+        "kind": "EntitySet",
+        "url": "relationshipattributes"
+      },
+      {
+        "name": "relationships",
+        "kind": "EntitySet",
+        "url": "relationships"
+      },
+      {
+        "name": "reportcategories",
+        "kind": "EntitySet",
+        "url": "reportcategories"
+      },
+      {
+        "name": "reports",
+        "kind": "EntitySet",
+        "url": "reports"
+      },
+      {
+        "name": "resourcegroupdatasources",
+        "kind": "EntitySet",
+        "url": "resourcegroupdatasources"
+      },
+      {
+        "name": "resourcegroups",
+        "kind": "EntitySet",
+        "url": "resourcegroups"
+      },
+      {
+        "name": "resources",
+        "kind": "EntitySet",
+        "url": "resources"
+      },
+      {
+        "name": "resourcespecs",
+        "kind": "EntitySet",
+        "url": "resourcespecs"
+      },
+      {
+        "name": "ribbonmetadatasettoprocess",
+        "kind": "EntitySet",
+        "url": "ribbonmetadatasettoprocess"
+      },
+      {
+        "name": "roleprivilegescollection",
+        "kind": "EntitySet",
+        "url": "roleprivilegescollection"
+      },
+      {
+        "name": "roles",
+        "kind": "EntitySet",
+        "url": "roles"
+      },
+      {
+        "name": "roletemplateprivilegescollection",
+        "kind": "EntitySet",
+        "url": "roletemplateprivilegescollection"
+      },
+      {
+        "name": "roletemplates",
+        "kind": "EntitySet",
+        "url": "roletemplates"
+      },
+      {
+        "name": "rollupfields",
+        "kind": "EntitySet",
+        "url": "rollupfields"
+      },
+      {
+        "name": "runtimedependencies",
+        "kind": "EntitySet",
+        "url": "runtimedependencies"
+      },
+      {
+        "name": "salesliteratureitems",
+        "kind": "EntitySet",
+        "url": "salesliteratureitems"
+      },
+      {
+        "name": "salesliteratures",
+        "kind": "EntitySet",
+        "url": "salesliteratures"
+      },
+      {
+        "name": "salesorderdetails",
+        "kind": "EntitySet",
+        "url": "salesorderdetails"
+      },
+      {
+        "name": "salesorders",
+        "kind": "EntitySet",
+        "url": "salesorders"
+      },
+      {
+        "name": "savedqueries",
+        "kind": "EntitySet",
+        "url": "savedqueries"
+      },
+      {
+        "name": "savedqueryvisualizations",
+        "kind": "EntitySet",
+        "url": "savedqueryvisualizations"
+      },
+      {
+        "name": "sdkmessagefilters",
+        "kind": "EntitySet",
+        "url": "sdkmessagefilters"
+      },
+      {
+        "name": "sdkmessageprocessingstepimages",
+        "kind": "EntitySet",
+        "url": "sdkmessageprocessingstepimages"
+      },
+      {
+        "name": "sdkmessageprocessingsteps",
+        "kind": "EntitySet",
+        "url": "sdkmessageprocessingsteps"
+      },
+      {
+        "name": "sdkmessageprocessingstepsecureconfigs",
+        "kind": "EntitySet",
+        "url": "sdkmessageprocessingstepsecureconfigs"
+      },
+      {
+        "name": "sdkmessages",
+        "kind": "EntitySet",
+        "url": "sdkmessages"
+      },
+      {
+        "name": "searchtelemetries",
+        "kind": "EntitySet",
+        "url": "searchtelemetries"
+      },
+      {
+        "name": "semiannualfiscalcalendars",
+        "kind": "EntitySet",
+        "url": "semiannualfiscalcalendars"
+      },
+      {
+        "name": "serviceappointments",
+        "kind": "EntitySet",
+        "url": "serviceappointments"
+      },
+      {
+        "name": "servicecontractcontactscollection",
+        "kind": "EntitySet",
+        "url": "servicecontractcontactscollection"
+      },
+      {
+        "name": "serviceendpoints",
+        "kind": "EntitySet",
+        "url": "serviceendpoints"
+      },
+      {
+        "name": "serviceplanappmodulesset",
+        "kind": "EntitySet",
+        "url": "serviceplanappmodulesset"
+      },
+      {
+        "name": "serviceplanmappings",
+        "kind": "EntitySet",
+        "url": "serviceplanmappings"
+      },
+      {
+        "name": "serviceplans",
+        "kind": "EntitySet",
+        "url": "serviceplans"
+      },
+      {
+        "name": "services",
+        "kind": "EntitySet",
+        "url": "services"
+      },
+      {
+        "name": "sharepointdocumentlocations",
+        "kind": "EntitySet",
+        "url": "sharepointdocumentlocations"
+      },
+      {
+        "name": "sharepointsites",
+        "kind": "EntitySet",
+        "url": "sharepointsites"
+      },
+      {
+        "name": "similarityrules",
+        "kind": "EntitySet",
+        "url": "similarityrules"
+      },
+      {
+        "name": "sitemaps",
+        "kind": "EntitySet",
+        "url": "sitemaps"
+      },
+      {
+        "name": "sites",
+        "kind": "EntitySet",
+        "url": "sites"
+      },
+      {
+        "name": "slaitems",
+        "kind": "EntitySet",
+        "url": "slaitems"
+      },
+      {
+        "name": "slakpiinstances",
+        "kind": "EntitySet",
+        "url": "slakpiinstances"
+      },
+      {
+        "name": "slas",
+        "kind": "EntitySet",
+        "url": "slas"
+      },
+      {
+        "name": "socialactivities",
+        "kind": "EntitySet",
+        "url": "socialactivities"
+      },
+      {
+        "name": "socialprofiles",
+        "kind": "EntitySet",
+        "url": "socialprofiles"
+      },
+      {
+        "name": "solutioncomponentattributeconfigurations",
+        "kind": "EntitySet",
+        "url": "solutioncomponentattributeconfigurations"
+      },
+      {
+        "name": "solutioncomponentbatchconfigurations",
+        "kind": "EntitySet",
+        "url": "solutioncomponentbatchconfigurations"
+      },
+      {
+        "name": "solutioncomponentconfigurations",
+        "kind": "EntitySet",
+        "url": "solutioncomponentconfigurations"
+      },
+      {
+        "name": "solutioncomponentrelationshipconfigurations",
+        "kind": "EntitySet",
+        "url": "solutioncomponentrelationshipconfigurations"
+      },
+      {
+        "name": "solutioncomponents",
+        "kind": "EntitySet",
+        "url": "solutioncomponents"
+      },
+      {
+        "name": "solutionhistories",
+        "kind": "EntitySet",
+        "url": "solutionhistories"
+      },
+      {
+        "name": "solutions",
+        "kind": "EntitySet",
+        "url": "solutions"
+      },
+      {
+        "name": "stagesolutionuploads",
+        "kind": "EntitySet",
+        "url": "stagesolutionuploads"
+      },
+      {
+        "name": "subjects",
+        "kind": "EntitySet",
+        "url": "subjects"
+      },
+      {
+        "name": "subscriptionmanuallytrackedobjects",
+        "kind": "EntitySet",
+        "url": "subscriptionmanuallytrackedobjects"
+      },
+      {
+        "name": "subscriptionstatisticsofflineset",
+        "kind": "EntitySet",
+        "url": "subscriptionstatisticsofflineset"
+      },
+      {
+        "name": "subscriptionstatisticsoutlookset",
+        "kind": "EntitySet",
+        "url": "subscriptionstatisticsoutlookset"
+      },
+      {
+        "name": "subscriptionsyncentriesoffline",
+        "kind": "EntitySet",
+        "url": "subscriptionsyncentriesoffline"
+      },
+      {
+        "name": "subscriptionsyncentriesoutlook",
+        "kind": "EntitySet",
+        "url": "subscriptionsyncentriesoutlook"
+      },
+      {
+        "name": "syncerrors",
+        "kind": "EntitySet",
+        "url": "syncerrors"
+      },
+      {
+        "name": "systemforms",
+        "kind": "EntitySet",
+        "url": "systemforms"
+      },
+      {
+        "name": "systemuserauthorizationchangetrackers",
+        "kind": "EntitySet",
+        "url": "systemuserauthorizationchangetrackers"
+      },
+      {
+        "name": "systemuserlicensescollection",
+        "kind": "EntitySet",
+        "url": "systemuserlicensescollection"
+      },
+      {
+        "name": "systemuserprofilescollection",
+        "kind": "EntitySet",
+        "url": "systemuserprofilescollection"
+      },
+      {
+        "name": "systemuserrolescollection",
+        "kind": "EntitySet",
+        "url": "systemuserrolescollection"
+      },
+      {
+        "name": "systemusers",
+        "kind": "EntitySet",
+        "url": "systemusers"
+      },
+      {
+        "name": "systemusersyncmappingprofilescollection",
+        "kind": "EntitySet",
+        "url": "systemusersyncmappingprofilescollection"
+      },
+      {
+        "name": "tasks",
+        "kind": "EntitySet",
+        "url": "tasks"
+      },
+      {
+        "name": "teammemberships",
+        "kind": "EntitySet",
+        "url": "teammemberships"
+      },
+      {
+        "name": "teammobileofflineprofilememberships",
+        "kind": "EntitySet",
+        "url": "teammobileofflineprofilememberships"
+      },
+      {
+        "name": "teamprofilescollection",
+        "kind": "EntitySet",
+        "url": "teamprofilescollection"
+      },
+      {
+        "name": "teamrolescollection",
+        "kind": "EntitySet",
+        "url": "teamrolescollection"
+      },
+      {
+        "name": "teams",
+        "kind": "EntitySet",
+        "url": "teams"
+      },
+      {
+        "name": "teamsyncattributemappingprofilescollection",
+        "kind": "EntitySet",
+        "url": "teamsyncattributemappingprofilescollection"
+      },
+      {
+        "name": "teamtemplates",
+        "kind": "EntitySet",
+        "url": "teamtemplates"
+      },
+      {
+        "name": "templates",
+        "kind": "EntitySet",
+        "url": "templates"
+      },
+      {
+        "name": "territories",
+        "kind": "EntitySet",
+        "url": "territories"
+      },
+      {
+        "name": "themes",
+        "kind": "EntitySet",
+        "url": "themes"
+      },
+      {
+        "name": "timestampdatemappings",
+        "kind": "EntitySet",
+        "url": "timestampdatemappings"
+      },
+      {
+        "name": "timezonedefinitions",
+        "kind": "EntitySet",
+        "url": "timezonedefinitions"
+      },
+      {
+        "name": "timezonelocalizednames",
+        "kind": "EntitySet",
+        "url": "timezonelocalizednames"
+      },
+      {
+        "name": "timezonerules",
+        "kind": "EntitySet",
+        "url": "timezonerules"
+      },
+      {
+        "name": "tracelogs",
+        "kind": "EntitySet",
+        "url": "tracelogs"
+      },
+      {
+        "name": "transactioncurrencies",
+        "kind": "EntitySet",
+        "url": "transactioncurrencies"
+      },
+      {
+        "name": "transformationmappings",
+        "kind": "EntitySet",
+        "url": "transformationmappings"
+      },
+      {
+        "name": "transformationparametermappings",
+        "kind": "EntitySet",
+        "url": "transformationparametermappings"
+      },
+      {
+        "name": "translationprocesses",
+        "kind": "EntitySet",
+        "url": "translationprocesses"
+      },
+      {
+        "name": "uoms",
+        "kind": "EntitySet",
+        "url": "uoms"
+      },
+      {
+        "name": "uomschedules",
+        "kind": "EntitySet",
+        "url": "uomschedules"
+      },
+      {
+        "name": "userforms",
+        "kind": "EntitySet",
+        "url": "userforms"
+      },
+      {
+        "name": "usermappings",
+        "kind": "EntitySet",
+        "url": "usermappings"
+      },
+      {
+        "name": "usermobileofflineprofilememberships",
+        "kind": "EntitySet",
+        "url": "usermobileofflineprofilememberships"
+      },
+      {
+        "name": "userqueries",
+        "kind": "EntitySet",
+        "url": "userqueries"
+      },
+      {
+        "name": "userqueryvisualizations",
+        "kind": "EntitySet",
+        "url": "userqueryvisualizations"
+      },
+      {
+        "name": "usersettingscollection",
+        "kind": "EntitySet",
+        "url": "usersettingscollection"
+      },
+      {
+        "name": "virtualentitymetadatas",
+        "kind": "EntitySet",
+        "url": "virtualentitymetadatas"
+      },
+      {
+        "name": "virtualresourcegroupresources",
+        "kind": "EntitySet",
+        "url": "virtualresourcegroupresources"
+      },
+      {
+        "name": "webresourceset",
+        "kind": "EntitySet",
+        "url": "webresourceset"
+      },
+      {
+        "name": "webwizards",
+        "kind": "EntitySet",
+        "url": "webwizards"
+      },
+      {
+        "name": "workflowbinaries",
+        "kind": "EntitySet",
+        "url": "workflowbinaries"
+      },
+      {
+        "name": "workflowlogs",
+        "kind": "EntitySet",
+        "url": "workflowlogs"
+      },
+      {
+        "name": "workflows",
+        "kind": "EntitySet",
+        "url": "workflows"
+      },
+      {
+        "name": "EntityDefinitions",
+        "kind": "EntitySet",
+        "url": "EntityDefinitions"
+      },
+      {
+        "name": "GlobalOptionSetDefinitions",
+        "kind": "EntitySet",
+        "url": "GlobalOptionSetDefinitions"
+      },
+      {
+        "name": "ManagedPropertyDefinitions",
+        "kind": "EntitySet",
+        "url": "ManagedPropertyDefinitions"
+      },
+      {
+        "name": "RelationshipDefinitions",
+        "kind": "EntitySet",
+        "url": "RelationshipDefinitions"
+      }
+    ]
+  }
