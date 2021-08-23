@@ -144,77 +144,7 @@ postman.setEnvironmentVariable("utils", () => {
         pm.collectionVariables.set("PROJECT_OVERVIEW_PAGE", JSON.stringify(pov));
     }
     var createInititivesOverview = (obj) => {}
-    var createEpicsOverview = (obj) => {
-        let summary = (obj.fields.summary !== null) ? obj.fields.summary : "No summary available.";
-        let description = (obj.fields.description !== null) ? obj.fields.description : "No description available.";
-        let statusID = obj.fields.status.id;
-        let statusName = obj.fields.status.name;
-        let overview = "h3. " + summary + "\n" + description + "\n";
-        const returnedObj = {
-            // Issue Details
-            key: obj.key,
-            overview: overview,
-            summary: summary,
-            description: description,
-            statusID: statusID,
-            statusName: statusName,
-            defDone: obj.fields.customfield_11492,
-            impactedGeographicRegions: obj.fields.customfield_11644,
-            labels: obj.fields.labels,
-            linkedIssues: obj.fields.issuelinks,
-            fixVersion: obj.fields.customfield_10600,
-            reqAttention: obj.fields.customfield_11490,
-            subtasks: obj.fields.subtasks,
-            issueColor: obj.fields.customfield_11247,
-            mvp: obj.fields.customfield_11450,
-            sprint: obj.fields.customfield_10122,
-            extendedJQL: obj.fields.customfield_11684,
-            valueStatement: obj.fields.customfield_11540,
-            projectFocus: obj.fields.customfield_11660,
-            startDate: obj.fields.customfield_11221, // Dates
-            dueDate: obj.fields.duedate,
-            endDate: obj.fields.customfield_11378,
-            targetStartDate: obj.fields.customfield_11419,
-            targetEndDate: obj.fields.customfield_11420,
-            lastUpdated: obj.fields.updated,
-            lastViewed: obj.fields.lastViewed,
-            solutionDesignDocument: obj.fields.customfield_11624, // Documentation
-            confluencePageID: obj.fields.customfield_11681,
-            confluenceParentPageID: obj.fields.customfield_11683,
-            projectWikiPage: obj.fields.customfield_11687,
-            projectRoadmap: obj.fields.customfield_11686,
-            progressNotes: obj.fields.customfield_11541,
-            assignee: obj.fields.assignee, // People
-            qaAssignees: obj.fields.customfield_11647,
-            qaLead: obj.fields.customfield_11665,
-            watchers: obj.fields.customfield_11202,
-            stakeholders: obj.fields.customfield_11451,
-            businessOwner: obj.fields.customfield_11667,
-            techLead: obj.fields.customfield_11666,
-            architectLead: obj.fields.customfield_11671,
-            sSecurityOwner: obj.fields.customfield_11668,
-            productManager: obj.fields.customfield_11669,
-            communicationUpdates: obj.fields.customfield_11534, // Communication Updates
-            qaUpdates: obj.fields.customfield_11651,
-            nextSteps: obj.fields.customfield_11623,
-            devUpdates: obj.fields.customfield_11643,
-            openQnAItems: obj.fields.customfield_11485,
-            additionalInfo: obj.fields.customfield_11487,
-            deliveryHealth: obj.fields.customfield_11542,
-            projectOverview: obj.fields.customfield_11575,
-            initiativeOverview: obj.fields.customfield_11662,
-            epicOverview: obj.fields.customfield_11670,
-            qaEstimate: obj.fields.customfield_10501, //Estimates
-            devEstimate: obj.fields.customfield_10502,
-            aggregatetimeoriginalestimate: obj.fields.aggregatetimeoriginalestimate,
-            estWorkComp: obj.fields.customfield_11460,
-            higEst: obj.fields.customfield_11211,
-            estimationNotes: obj.fields.customfield_11685,
-            apiJSON: obj.fields.customfield_11642 // Tech Information
-
-        };
-        return returnedObj;
-    }
+    var createEpicsOverview = (obj) => {}
     var createCommunicationUpdates = (obj) => {}
     var setIssuesObjVars = (obj, iType) => {
 
