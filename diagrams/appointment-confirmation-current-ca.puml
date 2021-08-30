@@ -38,6 +38,15 @@ end box
 actor "DBI Customer" as DBI_CUS
 
 DBI_DATA -> DBI_API : Send Data
+note over DBI_DATA, DBI_API #EEE
+<b>Payload Sent to DBI Wrapper
+- "variables": {
+        "campaignName": "AppointmentTextMsg",
+        "skill": "Greeter Bot Agent",
+        "templateId": "1234567890"
+    }
+- "skill": "Greeter Bot/Skill",
+end note
 DBI_API -> LPPM : send message
 note over DBI_STY, LPCC #EEE
 <b>Payload Sent to Proactive Messaging
