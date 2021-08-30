@@ -1,0 +1,45 @@
+
+// API PAYLOAD SENT TO SUBSCRIBER TO THE DBI WRAPPER
+
+{
+  "countryCode": "1",
+  "phone": "6105740496",
+  "dbi": {
+    "templateId": "0bdbf518-f22d-4744-9d70-f80664501b1e",
+    "templateParameters": [
+      {
+        "name": "appointmentType",
+        "value": "Special Occasion"
+      }
+      {
+        "name": "appointmentDate",
+        "value": "Mon, August 30th"
+      },
+      {
+        "name": "appointmentTime",
+        "value": "10:30 AM"
+      },
+      {
+        "name": "storeName",
+        "value": "Feasterville"
+      },
+      {
+        "name": "confirmationNumber",
+        "value": "VM6F66R7"
+      }
+    ]
+  },
+  "livePerson": {
+    "campaignName": "AppointmentTextMsg",
+    "skill": "Greeter Bot Agent",
+    "templateId": "1234567890"
+  }
+}
+
+// API PAYLOAD SENT FROM DBI TO PROACTIVE MESSAGING
+
+
+
+
+
+
